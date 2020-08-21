@@ -11,7 +11,7 @@ UserName_Dev = sudos.UserName_GRiNd
 bot_id = token:match("(%d+)")  
 Id_Dev = sudos.Id_DevGRiNd
 Ids_Dev = {sudos.Id_DevGRiNd}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "تيكتوك"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كرايند"
 function dl_cb(arg,data)
 -- var(data)  
 end
@@ -350,7 +350,7 @@ height_ = 0
 end
 ------------------------------------------------------------------------------------------------------------
 function tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/GRiNdkid/GRiNd/master/Script.lua'
+url = 'https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/Script.lua'
 file_path = 'Script.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
@@ -370,7 +370,7 @@ end
 ------------------------------------------------------------------------------------------------------------ 
 function tdcli_update_callback_value_(Data) 
 tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/GRiNdkid/GRiNd/master/GRiNd.lua'
+url = 'https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/Script.lua'
 file_path = 'GRiNd.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
@@ -852,7 +852,7 @@ end
 send(msg.chat_id_, msg.id_, Gban)
 elseif text == ("قائمه المطورين 📝") then
 local list = redis:smembers(bot_id.."Developer:Bot")
-Sudos = "\n .𖣂 قائمة مطورين في البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Sudos = "\n .?? قائمة مطورين في البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Save:Username" .. v)
 if username then
