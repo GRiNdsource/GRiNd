@@ -70,7 +70,7 @@ done
 ]])
 Run_File_GRiNd:close()
 ------------------------------------------------------------------------------------------------------------
-local Run_SM = io.open("tk", 'w')
+local Run_SM = io.open("gr", 'w')
 Run_SM:write([[
 #!/usr/bin/env bash
 cd $HOME/GRiNd
@@ -83,7 +83,7 @@ done
 Run_SM:close()
 io.popen("mkdir Files")
 os.execute('chmod +x tg')
-os.execute('chmod +x grind')
+os.execute('chmod +x GRiNd')
 os.execute('chmod +x gr')
 os.execute('./gr')
 Status = true
