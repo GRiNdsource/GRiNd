@@ -4409,7 +4409,7 @@ local Texting = {
 local Description = Texting[math.random(#Texting)]
 local Get_Is_Id = redis:get(bot_id.."Set:Id:Group"..msg.chat_id_)
 if not redis:get(bot_id..'Status:Lock:Id:Py:Photo'..msg.chat_id_) then
-ifmuslim.photos_[0] then
+if muslim.photos_[0] then
 if Get_Is_Id then
 local Get_Is_Id = Get_Is_Id:gsub('#AddMem',Add_Mem) 
 local Get_Is_Id = Get_Is_Id:gsub('#id',Id) 

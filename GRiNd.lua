@@ -597,7 +597,7 @@ end
 function Send_Options(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "b666P")
+local UserName = (data.username_ or "JJJ0U")
 for gmatch in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = gmatch or 'GRiNd'
 end
@@ -637,7 +637,7 @@ end
 function Send_Optionspv(chat,idmsg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "b666P")
+local UserName = (data.username_ or "JJJ0U")
 for gmatch in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = gmatch
 end
@@ -6016,7 +6016,7 @@ local Texting = {
 local Description = Texting[math.random(#Texting)]
 local Get_Is_Id = redis:get(bot_id.."Set:Id:Group"..msg.chat_id_)
 if not redis:get(bot_id..'Status:Lock:Id:Py:Photo'..msg.chat_id_) then
-ifmuslim.photos_[0] then
+if muslim.photos_[0] then
 if Get_Is_Id then
 local Get_Is_Id = Get_Is_Id:gsub('#AddMem',Add_Mem) 
 local Get_Is_Id = Get_Is_Id:gsub('#id',Id) 
@@ -6889,7 +6889,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,".𖣂 حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "b666P")
+local UserName = (b.username_ or "JJJ0U")
 send(msg.chat_id_, msg.id_,".𖣂 منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6908,7 +6908,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,".𖣂 حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "b666P")
+local UserName = (b.username_ or "JJJ0U")
 send(msg.chat_id_, msg.id_,".𖣂 تم ترقية منشئ المجموعه ← ["..b.first_name_.."](T.me/"..UserName..")")  
 redis:sadd(bot_id.."President:Group"..msg.chat_id_,b.id_)
 end,nil)   
@@ -7140,7 +7140,7 @@ if (data.message_.content_.text_) then
     if (ban_Keko["ban"..msg.chat_id_..msg.sender_user_id_] and ban_Keko["ban"..msg.chat_id_..msg.sender_user_id_] == data.message_.content_.text_ and ban_Keko["ban:count:"..msg.chat_id_..msg.sender_user_id_] and ban_Keko["ban:count:"..msg.chat_id_..msg.sender_user_id_] >= 3) then 
         if (ban_Keko["ban2:"..msg.chat_id_..msg.sender_user_id_]) then 
             ban_Keko["ban2:"..msg.chat_id_..msg.sender_user_id_] = nil
---             send(msg.chat_id_, msg.id_,".𖣂 لتلح يا حلو 😉")  
+--             send(msg.chat_id_, msg.id_,".𖣂 لتلح يا حلو")  
         end 
         return false
     elseif(ban_Keko["ban"..msg.chat_id_..msg.sender_user_id_] and ban_Keko["ban"..msg.chat_id_..msg.sender_user_id_] == data.message_.content_.text_ and ban_Keko["ban:count:"..msg.chat_id_..msg.sender_user_id_]) then 
