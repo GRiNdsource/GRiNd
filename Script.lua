@@ -4773,13 +4773,13 @@ send(msg.chat_id_, msg.id_,[[
 
 ⌔︙. GRiNd TEAM  𖣂. 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙. [Source Channel](t.me/JJJ0s) 𖣂
+⌔︙. [Source Channel](t.me/JJJ0s) 
 
-⌔︙. [GRiNd Channel ](t.me/JJJ0s) 𖣂
+⌔︙. [GRiNd Channel ](t.me/JJJ0s) 
 
-⌔︙. [GRiNd BoTs](t.me/ThisIsMuslim)  𖣂
+⌔︙. [GRiNd BoTs](t.me/ThisIsMuslim)  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-⌔︙. [DeV](t.me/uuunr)  𖣂
+⌔︙. [DeV](t.me/uuunr)  
 ]]) 
 elseif text == 'الاوامر' and Admin(msg) then
 send(msg.chat_id_, msg.id_,[[*
