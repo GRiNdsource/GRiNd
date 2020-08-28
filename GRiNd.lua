@@ -2305,7 +2305,7 @@ if TypeForChat == ("ForUser") then
 if text == '/start' then  
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2765,7 +2765,7 @@ end
 if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2779,7 +2779,7 @@ end
 if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.?? قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2793,7 +2793,7 @@ end
 if text and text:match("^اضف مطور @(.*)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2815,7 +2815,7 @@ end
 if text and text:match("^حذف مطور @(.*)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2833,7 +2833,7 @@ end
 if text and text:match("^اضف مطور (%d+)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2844,7 +2844,7 @@ end
 if text and text:match("^حذف مطور (%d+)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2924,7 +2924,7 @@ end
 if text == ("مسح قائمه العام") and Dev_GRiNd(msg) or text == ("مسح المحظورين عام") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2933,7 +2933,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المحظورين عام من ا
 elseif text == ("مسح المطورين") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2942,7 +2942,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المطورين من البوت 
 elseif text == ("مسح المنشئين الاساسين") and DeveloperBot(msg) or text == "مسح الاساسين" and DeveloperBot(msg)  then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2953,7 +2953,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2964,7 +2964,7 @@ end,nil)
 elseif text == ("مسح المنشئين") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2973,7 +2973,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المنشئين في المجم�
 elseif text == ("مسح المدراء") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2982,7 +2982,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المدراء في المجمو�
 elseif text == ("مسح الادمنيه") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -2991,7 +2991,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح الادمنيه في المجم�
 elseif text == ("مسح المميزين") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3000,7 +3000,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المميزين في المجم�
 elseif text == ("مسح المكتومين") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3009,7 +3009,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المكتومين في المج�
 elseif text == ("مسح المحظورين") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3018,7 +3018,7 @@ send(msg.chat_id_, msg.id_, ".𖣂 تم مسح المحظورين في المج�
 elseif text == "حذف الاوامر المضافه" and Constructor(msg) or text == "مسح الاوامر المضافه" and Constructor(msg) then 
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3031,7 +3031,7 @@ send(msg.chat_id_, msg.id_,".𖣂 تم مسح جميع الاوامر التي �
 elseif text == "مسح الصلاحيات" and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3041,7 +3041,7 @@ send(msg.chat_id_, msg.id_,".𖣂 تم مسح صلاحيات المجموعه")
 elseif text == ("قائمه العام") and Dev_GRiNd(msg) or text == ("المحظورين عام") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3062,7 +3062,7 @@ send(msg.chat_id_, msg.id_, Gban)
 elseif text == ("المطورين") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3083,7 +3083,7 @@ send(msg.chat_id_, msg.id_, Sudos)
 elseif text == "المنشئين الاساسين" and DeveloperBot(msg) or text == "الاساسين" and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3106,7 +3106,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3129,7 +3129,7 @@ end,nil)
 elseif text == ("المنشئين") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3150,7 +3150,7 @@ send(msg.chat_id_, msg.id_, Monsh)
 elseif text == ("المدراء") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3171,7 +3171,7 @@ send(msg.chat_id_, msg.id_, Moder)
 elseif text == ("الادمنيه") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3283,7 +3283,7 @@ end,nil)
 elseif text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3304,7 +3304,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) ~= 0 and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3317,7 +3317,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3329,7 +3329,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3341,7 +3341,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3359,7 +3359,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3373,7 +3373,7 @@ end,nil)
 elseif text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3385,7 +3385,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text and text:match("^تنزيل منشئ$") and tonumber(msg.reply_to_message_id_) ~= 0 and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3397,7 +3397,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3409,7 +3409,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3421,7 +3421,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3437,7 +3437,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3449,7 +3449,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3465,7 +3465,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("تنزيل مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3477,7 +3477,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("حظر") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3508,7 +3508,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("الغاء حظر") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3525,7 +3525,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3545,7 +3545,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("الغاء كتم") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3557,7 +3557,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("الغاء تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3573,7 +3573,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text == ("تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3593,7 +3593,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 elseif text and text:match("^حظر عام @(.*)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3621,7 +3621,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^حظر عام 
 elseif text and text:match("^الغاء العام @(.*)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3638,7 +3638,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^الغاء ا�
 elseif text and text:match("^رفع منشئ اساسي @(.*)$") and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3658,7 +3658,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^رفع منش�
 elseif text and text:match("^تنزيل منشئ اساسي @(.*)$") and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3676,7 +3676,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3701,7 +3701,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -3720,7 +3720,7 @@ end,nil)
 elseif text and text:match("^رفع منشئ @(.*)$") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3740,7 +3740,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^رفع منش�
 elseif text and text:match("^تنزيل منشئ @(.*)$") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3756,7 +3756,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^تنزيل م�
 elseif text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3776,7 +3776,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^رفع مدي�
 elseif text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3792,7 +3792,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^تنزيل م�
 elseif text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3816,7 +3816,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^رفع ادم�
 elseif text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3832,7 +3832,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^تنزيل ا�
 elseif text and text:match("^رفع مميز @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3856,7 +3856,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^رفع ممي�
 elseif text and text:match("^تنزيل مميز @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -3962,7 +3962,7 @@ end
 elseif text and text:match("^حظر @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4001,7 +4001,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^حظر @(.*)$"
 elseif text and text:match("^الغاء حظر @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4022,7 +4022,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^الغاء ح�
 elseif text and text:match("^كتم @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4050,7 +4050,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^كتم @(.*)$"
 elseif text and text:match("^الغاء كتم @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4066,7 +4066,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^الغاء ك�
 elseif text and text:match("^تقيد @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4130,7 +4130,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = TextEnd[4]}, FunctionStatus
 elseif text and text:match("^الغاء تقيد @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4150,7 +4150,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^الغاء ت�
 elseif text and text:match("^طرد @(.*)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4188,7 +4188,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^طرد @(.*)$"
 elseif text and text:match("^حظر عام (%d+)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4205,7 +4205,7 @@ Send_Options(msg,text:match("^حظر عام (%d+)$"),"reply",".𖣂 تم حظر�
 elseif text and text:match("^الغاء العام (%d+)$") and Dev_GRiNd(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4216,7 +4216,7 @@ end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4225,7 +4225,7 @@ Send_Options(msg,text:match("^رفع منشئ اساسي (%d+)$") ,"reply",".�
 elseif text and text:match("^تنزيل منشئ اساسي (%d+)$") and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4234,7 +4234,7 @@ Send_Options(msg,text:match("^تنزيل منشئ اساسي (%d+)$") ,"reply","
 elseif text and text:match("^رفع منشئ (%d+)$") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4243,7 +4243,7 @@ Send_Options(msg,text:match("^رفع منشئ (%d+)$"),"reply",".𖣂 تم تر�
 elseif text and text:match("^تنزيل منشئ (%d+)$") and PresidentGroup(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4252,7 +4252,7 @@ Send_Options(msg,text:match("^تنزيل منشئ (%d+)$"),"reply",".𖣂 تم �
 elseif text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4261,7 +4261,7 @@ Send_Options(msg,text:match("^رفع مدير (%d+)$") ,"reply",".𖣂 تم تر
 elseif text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4270,7 +4270,7 @@ Send_Options(msg,text:match("^تنزيل مدير (%d+)$") ,"reply",".𖣂 تم 
 elseif text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4283,7 +4283,7 @@ Send_Options(msg,text:match("^رفع ادمن (%d+)$"),"reply",".𖣂 تم تر�
 elseif text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4292,7 +4292,7 @@ Send_Options(msg,text:match("^تنزيل ادمن (%d+)$"),"reply",".𖣂 تم �
 elseif text and text:match("^رفع مميز (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4305,7 +4305,7 @@ Send_Options(msg,text:match("^رفع مميز (%d+)$"),"reply",".𖣂 تم تر�
 elseif text and text:match("^تنزيل مميز (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -4314,7 +4314,7 @@ Send_Options(msg,text:match("^تنزيل مميز (%d+)$") ,"reply",".𖣂 تم 
 elseif text and text:match("^حظر (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4342,7 +4342,7 @@ end
 elseif text and text:match("^الغاء حظر (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4356,7 +4356,7 @@ Send_Options(msg,text:match("^الغاء حظر (%d+)$") ,"reply",".𖣂 تم ا
 elseif text and text:match("^كتم (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4373,7 +4373,7 @@ end
 elseif text and text:match("^الغاء كتم (%d+)$") and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end
@@ -4965,7 +4965,7 @@ send(msg.chat_id_, msg.id_, '.𖣂 تم تفعيل رفع - ( الادمن - ا�
 elseif text ==("تثبيت") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end  
@@ -4984,7 +4984,7 @@ end;end,nil)
 elseif text == "الغاء التثبيت" and Admin(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end  
@@ -6934,7 +6934,7 @@ end
 if text == 'تفعيل' and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -7002,7 +7002,7 @@ end
 if text == 'تعطيل' and DeveloperBot(msg) then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
@@ -7046,7 +7046,7 @@ end
 if text == 'تفعيل' and not DeveloperBot(msg) and not redis:get(bot_id..'Free:Bot') then
 local url,res = http.request('https://botdevmuslim.tk/ch/sub.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.GRiNd ~= true then
+if result.Ch_Member.GRiNd ~= true then
 send(msg.chat_id_,msg.id_,'\n.𖣂 عليك الاشتراك في قناة السورس \n.𖣂 قناة السورس ← { @JJJ0U }')   
 return false 
 end 
