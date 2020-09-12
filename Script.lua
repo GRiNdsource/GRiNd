@@ -726,7 +726,7 @@ redis:setex(bot_id..'Ban:Cmd:Start'..msg.sender_user_id_,60,true)
 return false
 end
 if not Dev_GRiNd(msg) and not redis:sismember(bot_id..'User:Ban:Pv',msg.sender_user_id_) and not redis:get(bot_id..'Status:Lock:Twasl') then
-send(msg.sender_user_id_,msg.id_,' .𖣂 تم ارسال رسالتك الى المطور ← { [tahaj20] }')    
+send(msg.sender_user_id_,msg.id_,' .𖣂 تم ارسال رسالتك الى المطور ← { [muslimj20] }')    
 local List_id = {Id_Dev,msg.sender_user_id_}
 for k,v in pairs(List_id) do   
 tdcli_function({ID="GetChat",chat_id_=v},function(arg,chat) end,nil)
@@ -982,16 +982,16 @@ else
 localmuslim = (w + q)
 local sendok = #group -muslim
 if q == 0 then
-taha = ''
+muslim = ''
 else
-taha = '\n.𖣂 تم ازالة ~ '..q..' مجموعات من البوت'
+muslim = '\n.𖣂 تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 GRiNd = ''
 else
 GRiNd = '\n.𖣂 تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*.𖣂 عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..taha..'\n .𖣂 اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*.𖣂 عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..muslim..'\n .𖣂 اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
 end
 end
 end,nil)
@@ -1605,7 +1605,7 @@ Command = " .𖣂 لا توجد اوامر اضافيه"
 end
 send(msg.chat_id_, msg.id_,"["..Command.."]")
 elseif text == "تاك للكل" and Admin(msg) then
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,taha)
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,muslim)
 local t = "\n.𖣂 قائمة الاعضاء \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 x = 0
 local list =muslim.members_
@@ -4382,7 +4382,7 @@ redis:set(bot_id.."Set:Id:Group"..msg.chat_id_,Text_Rand)
 send(msg.chat_id_, msg.id_,'.𖣂 تم تغير الايدي ارسل ايدي لرؤيته')
 end
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not redis:get(bot_id..'Status:Lock:Id:Photo'..msg.chat_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,muslim,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
 UserName_User = '@'..data.username_
@@ -4398,7 +4398,7 @@ local Status_Gps = Get_Rank(Id,msg.chat_id_)
 local NumMessageEdit = redis:get(bot_id..'Num:Message:Edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Num_Games = redis:get(bot_id.."Num:Add:Games"..msg.chat_id_..msg.sender_user_id_) or 0
 local Add_Mem = redis:get(bot_id.."Num:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
-local Total_Photp = (taha.total_count_ or 0)
+local Total_Photp = (muslim.total_count_ or 0)
 local Texting = {
 'ملاك وناسيك بكروبنه😟',
 "حلغوم والله☹️ ",
@@ -4421,9 +4421,9 @@ local Get_Is_Id = Get_Is_Id:gsub('#auto',TotalMsg)
 local Get_Is_Id = Get_Is_Id:gsub('#Description',Description) 
 local Get_Is_Id = Get_Is_Id:gsub('#game',Num_Games) 
 local Get_Is_Id = Get_Is_Id:gsub('#photos',Total_Photp) 
-sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,Get_Is_Id)
+sendPhoto(msg.chat_id_,msg.id_,muslim.photos_[0].sizes_[1].photo_.persistent_id_,Get_Is_Id)
 else
-sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,' .𖣂 '..Description..'\n .𖣂 ايديك ← '..Id..'\n .𖣂 معرفك ← '..UserName_User..'\n .𖣂 رتبتك ← '..Status_Gps..'\n .𖣂 رسائلك ← '..NumMsg..'\n .𖣂 السحكات ← '..NumMessageEdit..' \n .𖣂 تتفاعلك ← '..TotalMsg..'\n.𖣂 مجوهراتك ← '..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,muslim.photos_[0].sizes_[1].photo_.persistent_id_,' .𖣂 '..Description..'\n .𖣂 ايديك ← '..Id..'\n .𖣂 معرفك ← '..UserName_User..'\n .𖣂 رتبتك ← '..Status_Gps..'\n .𖣂 رسائلك ← '..NumMsg..'\n .𖣂 السحكات ← '..NumMessageEdit..' \n .𖣂 تتفاعلك ← '..TotalMsg..'\n.𖣂 مجوهراتك ← '..Num_Games)
 end
 else
 send(msg.chat_id_, msg.id_,'\n* .𖣂 ايديك ← '..Id..'\n .𖣂 معرفك ← *['..UserName_User..']*\n .𖣂 رتبتك ← '..Status_Gps..'\n .𖣂 رسائلك ← '..NumMsg..'\n .𖣂 السحكات ← '..NumMessageEdit..' \n .𖣂 تتفاعلك ← '..TotalMsg..'\n.𖣂 مجوهراتك ← '..Num_Games..'*') 
@@ -5006,14 +5006,14 @@ send(msg.chat_id_,msg.id_," .𖣂 تم خصم *~ { "..NUMPY.." }* من مجوه�
 end 
 return false 
 elseif text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
-taha = text:match("^اضف رسائل (%d+)$")
-redis:set(bot_id.."Status:id:user"..msg.chat_id_,taha)  
+muslim = text:match("^اضف رسائل (%d+)$")
+redis:set(bot_id.."Status:id:user"..msg.chat_id_,muslim)  
 redis:setex(bot_id.."Status:Add:msg:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, " .𖣂 ارسل لي عدد الرسائل الان") 
 return false
 elseif text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-taha = text:match("^اضف مجوهرات (%d+)$")
-redis:set(bot_id.."Status:idgem:user"..msg.chat_id_,taha)  
+muslim = text:match("^اضف مجوهرات (%d+)$")
+redis:set(bot_id.."Status:idgem:user"..msg.chat_id_,muslim)  
 redis:setex(bot_id.."Status:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, " .𖣂 ارسل لي عدد المجوهرات الان") 
 elseif text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
@@ -5084,16 +5084,16 @@ else
 localmuslim = (w + q)
 local sendok = #group -muslim
 if q == 0 then
-taha = ''
+muslim = ''
 else
-taha = '\n.𖣂 تم ازالة ~ '..q..' مجموعات من البوت'
+muslim = '\n.𖣂 تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 GRiNd = ''
 else
 GRiNd = '\n.𖣂 تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*.𖣂 عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..taha..'\n .𖣂 اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*.𖣂 عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..muslim..'\n .𖣂 اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
 end
 end
 end,nil)
