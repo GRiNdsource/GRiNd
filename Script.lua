@@ -225,16 +225,16 @@ end
 ------------------------------------------------------------------------------------------------------------
 function sendText(chat_id, text, reply_to_message_id, markdown) 
 Status_Api = "https://api.telegram.org/bot"..token 
-local Url_Api = Status_Api.."/sendMessage?chat_id=" .. chat_id .. "&text=" .. URL.escape(text) 
+local url_Api = Status_Api.."/sendMessage?chat_id=" .. chat_id .. "&text=" .. url.escape(text) 
 if reply_to_message_id ~= 0 then 
-Url_Api = Url_Api .. "&reply_to_message_id=" .. reply_to_message_id  
+url_Api = url_Api .. "&reply_to_message_id=" .. reply_to_message_id  
 end 
 if markdown == "md" or markdown == "markdown" then 
-Url_Api = Url_Api.."&parse_mode=Markdown" 
+url_Api = url_Api.."&parse_mode=Markdown" 
 elseif markdown == "html" then 
-Url_Api = Url_Api.."&parse_mode=HTML" 
+url_Api = url_Api.."&parse_mode=HTML" 
 end 
-return Get_Api(Url_Api)  
+return Get_Api(url_Api)  
 end
 ------------------------------------------------------------------------------------------------------------
 function send_inline_keyboard(chat_id,text,keyboard,inline,reply_id) 
@@ -244,7 +244,7 @@ response.inline_keyboard = inline
 response.resize_keyboard = true 
 response.one_time_keyboard = false 
 response.selective = false  
-local Status_Api = "https://api.telegram.org/bot"..token.."/sendMessage?chat_id="..chat_id.."&text="..URL.escape(text).."&parse_mode=Markdown&disable_web_page_preview=true&reply_markup="..URL.escape(JSON.encode(response)) 
+local Status_Api = "https://api.telegram.org/bot"..token.."/sendMessage?chat_id="..chat_id.."&text="..url.escape(text).."&parse_mode=Markdown&disable_web_page_preview=true&reply_markup="..url.escape(JSON.encode(response)) 
 if reply_id then 
 Status_Api = Status_Api.."&reply_to_message_id="..reply_id 
 end 
