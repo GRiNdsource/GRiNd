@@ -2306,7 +2306,7 @@ if text == '/start' then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if Dev_GRiNd(msg) then
@@ -2766,7 +2766,7 @@ if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -2780,7 +2780,7 @@ if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -2794,7 +2794,7 @@ if text and text:match("^اضف مطور @(.*)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -2816,7 +2816,7 @@ if text and text:match("^حذف مطور @(.*)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -2834,7 +2834,7 @@ if text and text:match("^اضف مطور (%d+)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:sadd(bot_id.."Developer:Bot", text:match("^اضف مطور (%d+)$"))
@@ -2845,7 +2845,7 @@ if text and text:match("^حذف مطور (%d+)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Developer:Bot", text:match("^حذف مطور (%d+)$"))
@@ -2925,7 +2925,7 @@ if text == ("مسح قائمه العام") and Dev_GRiNd(msg) or text == ("مس
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Removal:User:Groups")
@@ -2934,7 +2934,7 @@ elseif text == ("مسح المطورين") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Developer:Bot")
@@ -2943,7 +2943,7 @@ elseif text == ("مسح المنشئين الاساسين") and DeveloperBot(msg
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."President:Group"..msg.chat_id_)
@@ -2954,7 +2954,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."President:Group"..msg.chat_id_)
@@ -2965,7 +2965,7 @@ elseif text == ("مسح المنشئين") and PresidentGroup(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Constructor:Group"..msg.chat_id_)
@@ -2974,7 +2974,7 @@ elseif text == ("مسح المدراء") and Constructor(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Manager:Group"..msg.chat_id_)
@@ -2983,7 +2983,7 @@ elseif text == ("مسح الادمنيه") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Admin:Group"..msg.chat_id_)
@@ -2992,7 +2992,7 @@ elseif text == ("مسح المميزين") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Vip:Group"..msg.chat_id_)
@@ -3001,7 +3001,7 @@ elseif text == ("مسح المكتومين") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Silence:User:Group"..msg.chat_id_)
@@ -3010,7 +3010,7 @@ elseif text == ("مسح المحظورين") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:del(bot_id.."Removal:User:Group"..msg.chat_id_)
@@ -3019,7 +3019,7 @@ elseif text == "حذف الاوامر المضافه" and Constructor(msg) or te
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Command:List:Group"..msg.chat_id_)
@@ -3032,7 +3032,7 @@ elseif text == "مسح الصلاحيات" and Constructor(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Validitys:Group"..msg.chat_id_)
@@ -3042,7 +3042,7 @@ elseif text == ("قائمه العام") and Dev_GRiNd(msg) or text == ("الم�
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Removal:User:Groups")
@@ -3063,7 +3063,7 @@ elseif text == ("المطورين") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Developer:Bot")
@@ -3084,7 +3084,7 @@ elseif text == "المنشئين الاساسين" and DeveloperBot(msg) or text
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."President:Group"..msg.chat_id_)
@@ -3107,7 +3107,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."President:Group"..msg.chat_id_)
@@ -3130,7 +3130,7 @@ elseif text == ("المنشئين") and PresidentGroup(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Constructor:Group"..msg.chat_id_)
@@ -3151,7 +3151,7 @@ elseif text == ("المدراء") and Constructor(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Manager:Group"..msg.chat_id_)
@@ -3172,7 +3172,7 @@ elseif text == ("الادمنيه") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 local list = redis:smembers(bot_id.."Admin:Group"..msg.chat_id_)
@@ -3284,7 +3284,7 @@ elseif text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3305,7 +3305,7 @@ elseif text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) 
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3318,7 +3318,7 @@ elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3330,7 +3330,7 @@ elseif text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_mess
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3342,7 +3342,7 @@ elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
@@ -3360,7 +3360,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3374,7 +3374,7 @@ elseif text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3386,7 +3386,7 @@ elseif text and text:match("^تنزيل منشئ$") and tonumber(msg.reply_to_me
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3398,7 +3398,7 @@ elseif text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3410,7 +3410,7 @@ elseif text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~=
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3422,7 +3422,7 @@ elseif text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3438,7 +3438,7 @@ elseif text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~=
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3450,7 +3450,7 @@ elseif text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3466,7 +3466,7 @@ elseif text == ("تنزيل مميز") and tonumber(msg.reply_to_message_id_) ~=
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3478,7 +3478,7 @@ elseif text == ("حظر") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -3509,7 +3509,7 @@ elseif text == ("الغاء حظر") and tonumber(msg.reply_to_message_id_) ~= 0
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3526,7 +3526,7 @@ elseif text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if msg.can_be_deleted_ == false then 
@@ -3546,7 +3546,7 @@ elseif text == ("الغاء كتم") and tonumber(msg.reply_to_message_id_) ~= 0
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3558,7 +3558,7 @@ elseif text == ("الغاء تقيد") and tonumber(msg.reply_to_message_id_) ~=
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3574,7 +3574,7 @@ elseif text == ("تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Admi
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3594,7 +3594,7 @@ elseif text and text:match("^حظر عام @(.*)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3622,7 +3622,7 @@ elseif text and text:match("^الغاء العام @(.*)$") and Dev_GRiNd(msg) t
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3639,7 +3639,7 @@ elseif text and text:match("^رفع منشئ اساسي @(.*)$") and DeveloperBo
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3659,7 +3659,7 @@ elseif text and text:match("^تنزيل منشئ اساسي @(.*)$") and Develop
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3677,7 +3677,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3702,7 +3702,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3721,7 +3721,7 @@ elseif text and text:match("^رفع منشئ @(.*)$") and PresidentGroup(msg) th
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3741,7 +3741,7 @@ elseif text and text:match("^تنزيل منشئ @(.*)$") and PresidentGroup(msg
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3757,7 +3757,7 @@ elseif text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3777,7 +3777,7 @@ elseif text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) t
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3793,7 +3793,7 @@ elseif text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3817,7 +3817,7 @@ elseif text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3833,7 +3833,7 @@ elseif text and text:match("^رفع مميز @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3857,7 +3857,7 @@ elseif text and text:match("^تنزيل مميز @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -3963,7 +3963,7 @@ elseif text and text:match("^حظر @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4002,7 +4002,7 @@ elseif text and text:match("^الغاء حظر @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -4023,7 +4023,7 @@ elseif text and text:match("^كتم @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if msg.can_be_deleted_ == false then 
@@ -4051,7 +4051,7 @@ elseif text and text:match("^الغاء كتم @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -4067,7 +4067,7 @@ elseif text and text:match("^تقيد @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -4131,7 +4131,7 @@ elseif text and text:match("^الغاء تقيد @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 function FunctionStatus(arg, result)
@@ -4151,7 +4151,7 @@ elseif text and text:match("^طرد @(.*)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if msg.can_be_deleted_ == false then 
@@ -4189,7 +4189,7 @@ elseif text and text:match("^حظر عام (%d+)$") and Dev_GRiNd(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if Dev_GRiNd_User(text:match("^حظر عام (%d+)$")) == true then
@@ -4206,7 +4206,7 @@ elseif text and text:match("^الغاء العام (%d+)$") and Dev_GRiNd(msg) t
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Removal:User:Groups", text:match("^الغاء العام (%d+)$"))
@@ -4217,7 +4217,7 @@ if text and text:match("^رفع منشئ اساسي (%d+)$") and DeveloperBot(ms
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:sadd(bot_id.."President:Group"..msg.chat_id_, text:match("^رفع منشئ اساسي (%d+)$") )
@@ -4226,7 +4226,7 @@ elseif text and text:match("^تنزيل منشئ اساسي (%d+)$") and Develop
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."President:Group"..msg.chat_id_, text:match("^تنزيل منشئ اساسي (%d+)$") )
@@ -4235,7 +4235,7 @@ elseif text and text:match("^رفع منشئ (%d+)$") and PresidentGroup(msg) th
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:sadd(bot_id.."Constructor:Group"..msg.chat_id_, text:match("^رفع منشئ (%d+)$"))
@@ -4244,7 +4244,7 @@ elseif text and text:match("^تنزيل منشئ (%d+)$") and PresidentGroup(msg
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Constructor:Group"..msg.chat_id_, text:match("^تنزيل منشئ (%d+)$"))
@@ -4253,7 +4253,7 @@ elseif text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:sadd(bot_id.."Manager:Group"..msg.chat_id_, text:match("^رفع مدير (%d+)$") )
@@ -4262,7 +4262,7 @@ elseif text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) t
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Manager:Group"..msg.chat_id_, text:match("^تنزيل مدير (%d+)$") )
@@ -4271,7 +4271,7 @@ elseif text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -4284,7 +4284,7 @@ elseif text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Admin:Group"..msg.chat_id_, text:match("^تنزيل ادمن (%d+)$"))
@@ -4293,7 +4293,7 @@ elseif text and text:match("^رفع مميز (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -4306,7 +4306,7 @@ elseif text and text:match("^تنزيل مميز (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Vip:Group"..msg.chat_id_, text:match("^تنزيل مميز (%d+)$") )
@@ -4315,7 +4315,7 @@ elseif text and text:match("^حظر (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4343,7 +4343,7 @@ elseif text and text:match("^الغاء حظر (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if tonumber(text:match("^الغاء حظر (%d+)$") ) == tonumber(bot_id) then
@@ -4357,7 +4357,7 @@ elseif text and text:match("^كتم (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if Rank_Checking(text:match("^كتم (%d+)$"), msg.chat_id_) == true then
@@ -4374,7 +4374,7 @@ elseif text and text:match("^الغاء كتم (%d+)$") and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 redis:srem(bot_id.."Silence:User:Group"..msg.chat_id_,text:match("^الغاء كتم (%d+)$") )
@@ -4966,7 +4966,7 @@ elseif text ==("تثبيت") and msg.reply_to_message_id_ ~= 0 and Admin(msg) th
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if redis:sismember(bot_id.."Status:Lock:pin",msg.chat_id_) and not Constructor(msg) then
@@ -4985,7 +4985,7 @@ elseif text == "الغاء التثبيت" and Admin(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if redis:sismember(bot_id.."Status:Lock:pin",msg.chat_id_) and not Constructor(msg) then
@@ -6935,7 +6935,7 @@ if text == 'تفعيل' and DeveloperBot(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if TypeForChat ~= 'ForSuppur' then
@@ -7003,7 +7003,7 @@ if text == 'تعطيل' and DeveloperBot(msg) then
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -7047,7 +7047,7 @@ if text == 'تفعيل' and not DeveloperBot(msg) and not redis:get(bot_id..'Fre
 local res = https.request('https://asdwpro1.ml/Shnob/Shnob/sub.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }', 1, 'html')  
+send(msg.chat_id_, msg.id_,'\n⌔︙عليك الاشتراك في قناة السورس \n⌔︙قناة السورس ← { @JJJ0U }')  
 return false end
 end
 if TypeForChat ~= 'ForSuppur' then
