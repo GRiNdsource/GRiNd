@@ -6424,7 +6424,7 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⌔︙[Source Channel](t.me/JJJ0s) 𖣂.
 
-⌔︙[GRiNd Channel ](t.me/JJJ0s) 𖣂.
+⌔︙[GRiNd Channel ](t.me/JJJ0U) 𖣂.
 
 ⌔︙[GRiNd BoTs](t.me/ThisIsMuslim) 𖣂.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
