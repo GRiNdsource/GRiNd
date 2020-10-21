@@ -1395,8 +1395,8 @@ end
 --------------------------------------------------------------------------------------------------------------
 
 if msg.content_.ID == "MessageChatJoinByLink" then
-if tonumber(msg.sender_user_id_) == tonumber(399545418) then
-send(msg.chat_id_, msg.id_,'هلا حبيبي وتجراسي خالد .')
+if tonumber(msg.sender_user_id_) == tonumber(316592889) then
+send(msg.chat_id_, msg.id_,'هلا حبيبي وتاجراسي مسلم.')
 return false 
 end
 if redis:get(bot_id.."Status:lock:kanser"..msg.chat_id_) then
@@ -1406,7 +1406,7 @@ local first_ = data.first_name_ or ''
 localmuslim = (first_..''..last_)
 local Num = (redis:get(bot_id..'Num:kansers'..msg.chat_id_) or 25)
 if string.len(muslim) > tonumber(Num) then
-send(msg.chat_id_, msg.id_,'\n⌔︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌔︙اضغط هنا لزغرفه اسمك.](https://t.me/SJAIBot)')
+send(msg.chat_id_, msg.id_,'\n⌔︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌔︙اضغط هنا لزغرفه اسمك.](https://t.me/Z1FBoT)')
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
 end
 end,nil)   
