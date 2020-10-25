@@ -4765,11 +4765,9 @@ name = string.gsub(name,"شهر","امشي__ولا تعبر نهر")
 name = string.gsub(name,"شكه","يامن تعب يامن__يا من على الحاضر لكة")
 name = string.gsub(name,"القرد","__بعين امه غزال")
 name = string.gsub(name,"يكحله","اجه___عماها")
-send(msg.chat_id_, msg.id_," ⌯︙اسرع واحد يكمل المثل ~ {"..name.."}")
+send(msg.chat_id_, msg.id_,"⌔︙اسرع واحد يكمل المثل ~ {"..name.."}")
 return false
 end
-elseif text == 'السورس' or text == 'سورس' or text == 'ياسورس'  then
-send(msg.chat_id_, msg.id_,[[
 𓌹 GRiNd TEAM Source 𓌺
 
 ⌯︙GRiNd TEAM 𖣂. 
