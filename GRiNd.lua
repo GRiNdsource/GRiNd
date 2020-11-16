@@ -6350,18 +6350,15 @@ return false
 end
 elseif text == 'السورس' or text == 'سورس' or text == 'ياسورس'  then
 send(msg.chat_id_, msg.id_,[[
-⦑ Welcome to Source ⦒
-
-𓂅 .GRiNd TEAM 
+⌯︙GRiNd TEAM 𖣂. 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𓂅 . [Source Channel](t.me/JJJUU)
+⌯︙[Source Channel](t.me/JJJ0s) 𖣂.
 
-𓂅 . [Source Info ](t.me/GRiNd0)     
+⌯︙[GRiNd Channel ](t.me/JJJ0U) 𖣂.
 
-𓂅 . [GRiNd iNDT](t.me/GRiNd0)     
- 
- ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-𓂅 . [TWS GRiNd](t.me/ubuuuBoT)     
+⌯︙[GRiNd BoTs](t.me/ThisIsMuslim) 𖣂.
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+⌯︙[DeV](t.me/uuunr) 𖣂.
 ]]) 
 elseif text == 'الاوامر' and Admin(msg) then
 send(msg.chat_id_, msg.id_,[[*
