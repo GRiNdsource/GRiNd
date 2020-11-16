@@ -84,7 +84,7 @@ Run_SM:close()
 io.popen("mkdir Files")
 os.execute('chmod +x tg')
 os.execute('chmod +x GRiNd')
-os.execute('chmod +x tk')
+os.execute('chmod +x gr')
 os.execute('./gr')
 Status = true
 else   
