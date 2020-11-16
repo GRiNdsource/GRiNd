@@ -70,7 +70,7 @@ done
 ]])
 Run_File_GRiNd:close()
 ------------------------------------------------------------------------------------------------------------
-local Run_SM = io.open("tk", 'w')
+local Run_SM = io.open("gr", 'w')
 Run_SM:write([[
 #!/usr/bin/env bash
 cd $HOME/GRiNd
@@ -470,7 +470,7 @@ height_ = 0
 end
 ------------------------------------------------------------------------------------------------------------
 function tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua'
+url = 'https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua'
 file_path = 'GRiNd.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
@@ -490,7 +490,7 @@ end
 ------------------------------------------------------------------------------------------------------------ 
 function tdcli_update_callback_value_(Data) 
 tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua'
+url = 'https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua'
 file_path = 'GRiNd.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
