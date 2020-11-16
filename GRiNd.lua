@@ -85,7 +85,7 @@ io.popen("mkdir Files")
 os.execute('chmod +x tg')
 os.execute('chmod +x GRiNd')
 os.execute('chmod +x tk')
-os.execute('./tk')
+os.execute('./gr')
 Status = true
 else   
 f:close()  
