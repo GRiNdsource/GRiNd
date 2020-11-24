@@ -553,7 +553,7 @@ end
 function Send_Options(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "LN_NN")
+local UserName = (data.username_ or "JJJ0U")
 for gmatch in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = gmatch or 'GRiNd'
 end
@@ -593,7 +593,7 @@ end
 function Send_Optionspv(chat,idmsg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "LN_NN")
+local UserName = (data.username_ or "JJJ0U")
 for gmatch in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = gmatch
 end
@@ -2149,10 +2149,10 @@ elseif text == "تحديث" then
 dofile("GRiNd.lua")  
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث ملفات البوت")
 elseif text == 'تحديث السورس 🔂' then
-download_to_file('https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua','GRiNd.lua') 
+download_to_file('https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua','GRiNd.lua') 
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 elseif text == 'تحديث السورس' then
-download_to_file('https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua','GRiNd.lua') 
+download_to_file('https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua','GRiNd.lua') 
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 end
 if text == 'الملفات' then
@@ -2169,7 +2169,7 @@ Files = '⌯︙ لا توجد ملفات في البوت '
 end
 send(msg.chat_id_, msg.id_,Files)
 elseif text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/GRiNdsource/Files_GRiNd/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/GRiNdTeam/Files_GRiNd/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 if Get_info then
@@ -2198,7 +2198,7 @@ send(msg.chat_id_,msg.id_,"⌯︙تم مسح جميع ملفات المفعله"
 elseif text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdsource/Files_GRiNd/master/Files_GRiNd/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdTeam/Files_GRiNd/master/Files_GRiNd/"..File_Name)
 if Res == 200 then
 os.execute("rm -fr Files/"..File_Name)
 send(msg.chat_id_, msg.id_,"\n⌯︙الملف ← *"..File_Name.."*\n⌯︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -2209,7 +2209,7 @@ end
 elseif text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdsource/Files_GRiNd/master/Files_GRiNd/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdTeam/Files_GRiNd/master/Files_GRiNd/"..File_Name)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..File_Name,'w+')
 ChekAuto:write(Get_Json)
@@ -6354,9 +6354,9 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⌯︙[Source Channel](t.me/JJJ0s) 𖣂.
 
-⌯︙[SAiNT Channel ](t.me/LN_NN) 𖣂.
+⌯︙[GRiNd Channel ](t.me/JJJ0U) 𖣂.
 
-⌯︙[GRiNd BoTs](t.me/JJJ0S) 𖣂.
+⌯︙[GRiNd BoTs](t.me/ThisIsMuslim) 𖣂.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ⌯︙[DeV](t.me/uuunr) 𖣂.
 ]]) 
@@ -6834,7 +6834,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⌯︙ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "LN_NN")
+local UserName = (b.username_ or "JJJ0U")
 send(msg.chat_id_, msg.id_,"⌯︙منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6853,7 +6853,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⌯︙حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "LN_NN")
+local UserName = (b.username_ or "JJJ0U")
 send(msg.chat_id_, msg.id_,"⌯︙تم ترقية منشئ المجموعه ← ["..b.first_name_.."](T.me/"..UserName..")")  
 redis:sadd(bot_id.."President:User"..msg.chat_id_,b.id_)
 end,nil)   
