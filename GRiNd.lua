@@ -6354,9 +6354,9 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⌯︙[Source Channel](t.me/JJJ0s) 𖣂.
 
-⌯︙[GRiNd Channel ](t.me/JJJ0U) 𖣂.
+⌯︙[SAiNT Channel ](t.me/LN_NN) 𖣂.
 
-⌯︙[GRiNd BoTs](t.me/ThisIsMuslim) 𖣂.
+⌯︙[GRiNd BoTs](t.me/JJJ0S) 𖣂.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ⌯︙[DeV](t.me/uuunr) 𖣂.
 ]]) 
