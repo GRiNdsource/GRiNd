@@ -6356,12 +6356,11 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⌯︙[Source Channel](t.me/JJJ0S)
 
-⌯︙ [SAiNT Channel ](t.me/LN_NN)     
+⌯︙[SAiNT Channel ](t.me/LN_NN)     
 
-⌯︙ [GRiNd iNDT](t.me/JJJ0S/33)     
- 
+⌯︙[GRiNd iNDT](t.me/JJJ0S/33)
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-⌯︙[Source DeV](t.me/uuunr)     
+⌯︙[DeV](t.me/uuunr)     
 ]]) 
 elseif text == 'الاوامر' and Admin(msg) then
 send(msg.chat_id_, msg.id_,[[*
