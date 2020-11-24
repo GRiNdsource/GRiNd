@@ -1,11 +1,11 @@
 --[[
 
 --]]
-database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
-serpent = dofile("./File_Libs/serpent.lua")
-JSON    = dofile("./File_Libs/dkjson.lua")
-json    = dofile("./File_Libs/JSON.lua")
-URL     = dofile("./File_Libs/url.lua")
+database = dofile("./lib/redis.lua").connect("127.0.0.1", 6379)
+serpent = dofile("./lib/serpent.lua")
+JSON    = dofile("./lib/dkjson.lua")
+json    = dofile("./lib/JSON.lua")
+URL     = dofile("./lib/url.lua")
 http    = require("socket.http")
 https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
@@ -5803,10 +5803,10 @@ end
 t = t..'"linkgroup":"'..link..'"}' or ''
 end
 t = t..'}}'
-local File = io.open('./File_Libs/'..bot_id..'.json', "w")
+local File = io.open('./lib/'..bot_id..'.json', "w")
 File:write(t)
 File:close()
-sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '⌯︙ عدد مجموعات التي في البوت { '..#list..'}')
+sendDocument(msg.chat_id_, msg.id_,'./lib/'..bot_id..'.json', '⌯︙ عدد مجموعات التي في البوت { '..#list..'}')
 end
 if text == 'المطور' or text == 'مطور' or text == 'المطورين' then
 local Text_Dev = database:get(bot_id..'GRiNd:Text_Dev')
@@ -6761,10 +6761,10 @@ end
 t = t..'"linkgroup":"'..link..'"}' or ''
 end
 t = t..'}}'
-local File = io.open('./File_Libs/'..bot_id..'.json', "w")
+local File = io.open('./lib/'..bot_id..'.json', "w")
 File:write(t)
 File:close()
-sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '⌯︙ عدد مجموعات التي في البوت { '..#list..'}')
+sendDocument(msg.chat_id_, msg.id_,'./lib/'..bot_id..'.json', '⌯︙ عدد مجموعات التي في البوت { '..#list..'}')
 end
 if text == "تحديث السورس 📥" then
 send(msg.chat_id_,msg.id_,'⌯︙تم التحديث')
