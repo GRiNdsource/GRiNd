@@ -5,13 +5,13 @@ rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
 chmod +x GRiNd
 chmod +x install.sh
-chmod +x ts
+chmod +x gr
 ./ts
 }
 get() {
 rm -fr GRiNd.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/TshAkEAb/TshAkE/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/GRiNdsource /GRiNd/master/GRiNd.lua"
 lua start.lua
 }
 installall(){
