@@ -196,7 +196,7 @@ return false
 end 
 end
 function AddChannel(User) 
-local url , res = https.request('https://botdevmuslim.tk/muslim/api/sup/sub.php?id=='..User..'') 
+local url , res = https.request('https://botdevmuslim.tk/muslim/api/sup/sub.php?id='..User..'') 
 data = JSON.decode(url)
 if data.Ch_Member.GRiNd ~= true then
 Var = false
