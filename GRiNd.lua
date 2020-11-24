@@ -2149,10 +2149,10 @@ elseif text == "تحديث" then
 dofile("GRiNd.lua")  
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث ملفات البوت")
 elseif text == 'تحديث السورس 🔂' then
-download_to_file('https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua','GRiNd.lua') 
+download_to_file('https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua','GRiNd.lua') 
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 elseif text == 'تحديث السورس' then
-download_to_file('https://raw.githubusercontent.com/GRiNdTeam/GRiNd/master/GRiNd.lua','GRiNd.lua') 
+download_to_file('https://raw.githubusercontent.com/GRiNdsource/GRiNd/master/GRiNd.lua','GRiNd.lua') 
 send(msg.chat_id_, msg.id_, "⌯︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 end
 if text == 'الملفات' then
@@ -2169,7 +2169,7 @@ Files = '⌯︙ لا توجد ملفات في البوت '
 end
 send(msg.chat_id_, msg.id_,Files)
 elseif text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/GRiNdTeam/Files_GRiNd/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/GRiNdsource/Files_GRiNd/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 if Get_info then
@@ -2209,7 +2209,7 @@ end
 elseif text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdTeam/Files_GRiNd/master/Files_GRiNd/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/GRiNdsource/Files_GRiNd/master/Files_GRiNd/"..File_Name)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..File_Name,'w+')
 ChekAuto:write(Get_Json)
