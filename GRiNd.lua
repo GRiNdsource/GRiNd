@@ -105,7 +105,7 @@ UserName_Dev = sudos.UserName_GRiNd
 bot_id = token:match("(%d+)")  
 Id_Dev = sudos.Id_DevGRiNd
 Ids_Dev = {sudos.Id_DevGRiNd,bot_id}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "تيكتوك"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كرايند"
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
 print(serpent.block(value, {comment=false}))   
@@ -1379,7 +1379,7 @@ end
 
 if msg.content_.ID == "MessageChatJoinByLink" then
 if tonumber(msg.sender_user_id_) == tonumber(316592889) then
-send(msg.chat_id_, msg.id_,'هلا حبيبي وتجراسي خالد .')
+send(msg.chat_id_, msg.id_,'طب الحب والحرب تاج الراس مسلم 💔.')
 return false 
 end
 if redis:get(bot_id.."Status:lock:kanser"..msg.chat_id_) then
@@ -1389,7 +1389,7 @@ local first_ = data.first_name_ or ''
 local taha = (first_..''..last_)
 local Num = (redis:get(bot_id..'Num:kansers'..msg.chat_id_) or 25)
 if string.len(taha) > tonumber(Num) then
-send(msg.chat_id_, msg.id_,'\n⌯︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌯︙ اضغط هنا لزغرفه اسمك.](https://t.me/SJAIBot)')
+send(msg.chat_id_, msg.id_,'\n⌯︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌯︙ اضغط هنا لزغرفه اسمك.](https://t.me/Z1FBoT)')
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
 end
 end,nil)   
