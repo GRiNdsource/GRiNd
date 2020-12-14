@@ -1386,10 +1386,10 @@ if redis:get(bot_id.."Status:lock:kanser"..msg.chat_id_) then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 local last_ = data.last_name_ or ''
 local first_ = data.first_name_ or ''
-local taha = (first_..''..last_)
+local notfuond = (first_..''..last_)
 local Num = (redis:get(bot_id..'Num:kansers'..msg.chat_id_) or 25)
-if string.len(taha) > tonumber(Num) then
-send(msg.chat_id_, msg.id_,'\n⌯︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌯︙ اضغط هنا لزغرفه اسمك.](https://t.me/Z1FBoT)')
+if string.len(notfuond) > tonumber(Num) then
+send(msg.chat_id_, msg.id_,'\n⌯︙الكانسر مقفول يرجى زغرفه اسمك اولاً\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉\n[⌯︙ اضغط هنا لزغرفه اسمك.](https://t.me/sqxBoT)')
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
 end
 end,nil)   
@@ -2597,19 +2597,19 @@ if #group == i then
 if (w + q) == 0 then
 send(msg.chat_id_, msg.id_,'⌯︙لا توجد مجموعات وهميه ')   
 else
-local taha = (w + q)
-local sendok = #group - taha
+local notfuond = (w + q)
+local sendok = #group - notfuond
 if q == 0 then
-taha = ''
+notfuond = ''
 else
-taha = '\n⌯︙ تم ازالة ~ '..q..' مجموعات من البوت'
+notfuond = '\n⌯︙ تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 GRiNd = ''
 else
 GRiNd = '\n⌯︙ تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*⌯︙ عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..taha..'\n⌯︙اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*⌯︙ عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..notfuond..'\n⌯︙اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
 end
 end
 end,nil)
@@ -3245,10 +3245,10 @@ t = "⌯︙لا توجد اوامر اضافيه"
 end
 send(msg.chat_id_, msg.id_,"["..t.."]")
 elseif text == "تاك للكل" and Admin(msg) then
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,taha)
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,notfuond)
 local t = "\n⌯︙ قائمة الاعضاء \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 x = 0
-local list = taha.members_
+local list = notfuond.members_
 for k, v in pairs(list) do
 x = x + 1
 if redis:get(bot_id.."Save:Username"..v.user_id_) then
@@ -5400,12 +5400,12 @@ return false
 end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-local taha = "⌯︙ عدد الادمنيه : "..data.administrator_count_..
+local notfuond = "⌯︙ عدد الادمنيه : "..data.administrator_count_..
 "\n⌯︙ عدد المطرودين : "..data.kicked_count_..
 "\n⌯︙ عدد الاعضاء : "..data.member_count_..
 "\n⌯︙ عدد رسائل الكروب : "..(msg.id_/2097152/0.5)..
 "\n⌯︙ اسم المجموعه : ["..ta.title_.."]"
-send(msg.chat_id_, msg.id_, taha) 
+send(msg.chat_id_, msg.id_, notfuond) 
 end,nil)end,nil)
 elseif text == "غادر" then 
 if DeveloperBot(msg) and not redis:get(bot_id.."Status:Lock:Left"..msg.chat_id_) then 
@@ -5921,7 +5921,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Status,
 return false
 end
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not redis:get(bot_id..'Status:Lock:Id:Photo'..msg.chat_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,notfuond,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
 UserName_User = '@'..data.username_
@@ -5937,7 +5937,7 @@ local Status_Gps = Get_Rank(Id,msg.chat_id_)
 local NumMessageEdit = redis:get(bot_id..'Num:Message:Edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Num_Games = redis:get(bot_id.."Num:Add:Games"..msg.chat_id_..msg.sender_user_id_) or 0
 local Add_Mem = redis:get(bot_id.."Num:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
-local Total_Photp = (taha.total_count_ or 0)
+local Total_Photp = (notfuond.total_count_ or 0)
 local Texting = {
 'ملاك وناسيك بكروبنه😟',
 "حلغوم والله☹️ ",
@@ -5948,7 +5948,7 @@ local Texting = {
 local Description = Texting[math.random(#Texting)]
 local Get_Is_Id = redis:get(bot_id.."Set:Id:Group"..msg.chat_id_)
 if not redis:get(bot_id..'Status:Lock:Id:Py:Photo'..msg.chat_id_) then
-if taha.photos_[0] then
+if notfuond.photos_[0] then
 if Get_Is_Id then
 local Get_Is_Id = Get_Is_Id:gsub('#AddMem',Add_Mem) 
 local Get_Is_Id = Get_Is_Id:gsub('#id',Id) 
@@ -5960,9 +5960,9 @@ local Get_Is_Id = Get_Is_Id:gsub('#auto',TotalMsg)
 local Get_Is_Id = Get_Is_Id:gsub('#Description',Description) 
 local Get_Is_Id = Get_Is_Id:gsub('#game',Num_Games) 
 local Get_Is_Id = Get_Is_Id:gsub('#photos',Total_Photp) 
-sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,Get_Is_Id)
+sendPhoto(msg.chat_id_,msg.id_,notfuond.photos_[0].sizes_[1].photo_.persistent_id_,Get_Is_Id)
 else
-sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,'⌯︙'..Description..'\n⌯︙ايديك ← '..Id..'\n⌯︙معرفك ← '..UserName_User..'\n⌯︙رتبتك ← '..Status_Gps..'\n⌯︙رسائلك ← '..NumMsg..'\n⌯︙السحكات ← '..NumMessageEdit..' \n⌯︙تتفاعلك ← '..TotalMsg..'\n⌯︙ مجوهراتك ← '..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,notfuond.photos_[0].sizes_[1].photo_.persistent_id_,'⌯︙'..Description..'\n⌯︙ايديك ← '..Id..'\n⌯︙معرفك ← '..UserName_User..'\n⌯︙رتبتك ← '..Status_Gps..'\n⌯︙رسائلك ← '..NumMsg..'\n⌯︙السحكات ← '..NumMessageEdit..' \n⌯︙تتفاعلك ← '..TotalMsg..'\n⌯︙ مجوهراتك ← '..Num_Games)
 end
 else
 send(msg.chat_id_, msg.id_,'\n*⌯︙ايديك ← '..Id..'\n⌯︙معرفك ← *['..UserName_User..']*\n⌯︙رتبتك ← '..Status_Gps..'\n⌯︙رسائلك ← '..NumMsg..'\n⌯︙السحكات ← '..NumMessageEdit..' \n⌯︙تتفاعلك ← '..TotalMsg..'\n⌯︙ مجوهراتك ← '..Num_Games..'*') 
@@ -6588,14 +6588,14 @@ send(msg.chat_id_,msg.id_,"⌯︙تم خصم *~ { "..NUMPY.." }* من مجوهر
 end 
 return false 
 elseif text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
-taha = text:match("^اضف رسائل (%d+)$")
-redis:set(bot_id.."Status:id:user"..msg.chat_id_,taha)  
+notfuond = text:match("^اضف رسائل (%d+)$")
+redis:set(bot_id.."Status:id:user"..msg.chat_id_,notfuond)  
 redis:setex(bot_id.."Status:Add:msg:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, "⌯︙ارسل لي عدد الرسائل الان") 
 return false
 elseif text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-taha = text:match("^اضف مجوهرات (%d+)$")
-redis:set(bot_id.."Status:idgem:user"..msg.chat_id_,taha)  
+notfuond = text:match("^اضف مجوهرات (%d+)$")
+redis:set(bot_id.."Status:idgem:user"..msg.chat_id_,notfuond)  
 redis:setex(bot_id.."Status:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, "⌯︙ارسل لي عدد المجوهرات الان") 
 elseif text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
@@ -6663,19 +6663,19 @@ if #group == i then
 if (w + q) == 0 then
 send(msg.chat_id_, msg.id_,'⌯︙لا توجد مجموعات وهميه ')   
 else
-local taha = (w + q)
-local sendok = #group - taha
+local notfuond = (w + q)
+local sendok = #group - notfuond
 if q == 0 then
-taha = ''
+notfuond = ''
 else
-taha = '\n⌯︙ تم ازالة ~ '..q..' مجموعات من البوت'
+notfuond = '\n⌯︙ تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 GRiNd = ''
 else
 GRiNd = '\n⌯︙ تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*⌯︙ عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..taha..'\n⌯︙اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*⌯︙ عدد المجموعات الان ← { '..#group..' } مجموعه '..GRiNd..''..notfuond..'\n⌯︙اصبح عدد المجموعات الان ← { '..sendok..' } مجموعات*\n')   
 end
 end
 end,nil)
