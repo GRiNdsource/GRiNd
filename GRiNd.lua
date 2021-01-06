@@ -126,7 +126,7 @@ DevId = sudos.SUDO
 SudoUsers = {sudos.sudo_users,316592889}
 DevGRiNd = sudos.bot_id
 TokenBot = sudos.token
-NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك')
+NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'كرايند')
 
 FilesPrint = "\27[35m".."\nAll Source Files Started :  \n--------------------------------------------- ≈ --┉\n"..'\27[m'
 FilesNumber = 0
@@ -893,8 +893,8 @@ end
 DevMuslim:del(DevGRiNd.."Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
-if text and text:match('^'..(DevMuslim:get(DevGRiNd..'Moslim:NameBot') or "وايت بلاك")..' ') then
-data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevMuslim:get(DevGRiNd..'Moslim:NameBot') or "وايت بلاك")..' ','')
+if text and text:match('^'..(DevMuslim:get(DevGRiNd..'Moslim:NameBot') or "كرايند")..' ') then
+data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevMuslim:get(DevGRiNd..'Moslim:NameBot') or "كرايند")..' ','')
 end
 if data.message_.content_.text_ then
 local NewCmmd = DevMuslim:get(DevGRiNd.."Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
@@ -2702,7 +2702,7 @@ end end
 if Sudo(msg) then
 if text == 'جلب نسخه الكروبات' and SourceCh(msg) or text == 'جلب نسخه احتياطيه' and SourceCh(msg) then
 local list = DevMuslim:smembers(DevGRiNd..'Moslim:Groups') 
-local BotName = (DevMuslim:get(DevGRiNd.."Moslim:NameBot") or 'وايت بلاك')
+local BotName = (DevMuslim:get(DevGRiNd.."Moslim:NameBot") or 'كرايند')
 local GetJson = '{"BotId": '..DevGRiNd..',"BotName": "'..BotName..'","GroupsList":{'  
 for k,v in pairs(list) do 
 LinkGroups = DevMuslim:get(DevGRiNd.."Moslim:Groups:Links"..v)
@@ -2891,21 +2891,21 @@ end
 
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوت' then 
-NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك')
+NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'كرايند')
 local DevGRiNdTEAM = {"لتكول بوت اسمي "..NameBot.."💞🤝","عندي اسم تره 💔","صيحولي "..NameBot.." كافي بوت ","انت البوت لك"} 
 DevMuslim2 = math.random(#DevGRiNdTEAM) 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, DevGRiNdTEAM[DevMuslim2] , 1, 'html') 
 return false
 end
 if text == 'اسم البوت' or text == 'البوت شنو اسمه' or text == 'شسمه البوت' or text == 'البوت شسمه' then
-NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك') 
+NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'كرايند') 
 local DevGRiNdTEAM = {"اسمي القميل "..NameBot.."💔👍🏿","اتفضل كابتن"..NameBot.." 💔🤝"} 
 DevMuslim2 = math.random(#DevGRiNdTEAM) 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, DevGRiNdTEAM[DevMuslim2] , 1, 'html') 
 return false
 end
-if text and text == (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك') then 
-NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك')
+if text and text == (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'كرايند') then 
+NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'كرايند')
 local namebot = {'كول حب؟'..NameBot..' تفضل','اهوو شرايد','اطلقق واحدد يصيح '..NameBot..'💔👍🏿','لابسك يمعود'} 
 name = math.random(#namebot) 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, namebot[name] , 1, 'html') 
@@ -9311,7 +9311,7 @@ local Users = DevMuslim:smembers(DevGRiNd.."bot:userss")
 local Groups = DevMuslim:smembers(DevGRiNd..'bot:groups')
 local Sudos = DevMuslim:smembers(DevGRiNd.."Moslim:SudoBot:")
 if DevMuslim:get('Moslim_PROX:'..DevGRiNd..'name_bot') then
-DevMuslim:set(DevGRiNd..'Moslim:NameBot',(DevMuslim:get('Moslim_PROX:'..DevGRiNd..'name_bot') or 'وايت بلاك'))
+DevMuslim:set(DevGRiNd..'Moslim:NameBot',(DevMuslim:get('Moslim_PROX:'..DevGRiNd..'name_bot') or 'كرايند'))
 end
 for i = 1, #Users do
 local id = Users[i]
