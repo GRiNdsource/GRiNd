@@ -78,7 +78,7 @@ reset
 echo -e "\e[38;5;77m    ---------------------------------------------\e[0m"
 cd ..
 rm -rf luarocks*
-./tg -s GRaNd.lua
+./tg -s GRiNd.lua
 }
 if [ "$1" = "install" ]; then
 install
