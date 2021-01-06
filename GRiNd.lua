@@ -3562,19 +3562,19 @@ if DevMuslim:get(DevGRiNd..'Moslim:Lock:Games'..msg.chat_id_) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1,[[
 ⌯︙قائمة العاب المجموعه  
 ---------------------------------------------
-⌯︙لعبة التخمين  خمن
-⌯︙لعبة الامثله  امثله
-⌯︙لعبة العكس  العكس
-⌯︙لعبة الاسئله  اسئله
-⌯︙لعبة الروليت  روليت
-⌯︙لعبة الحزوره  حزوره
-⌯︙لعبة الترتيب  ترتيب
-⌯︙لعبة المعاني  معاني
-⌯︙لعبة المختلف  المختلف
-⌯︙لعبة السمايلات  سمايلات
-⌯︙لعبة المحيبس  المحيبس
-⌯︙لعبة الرياضيات  رياضيات
-⌯︙لعبة الانكليزيه  انكليزيه
+⌯︙لعبة التخمين : خمن
+⌯︙لعبة الامثله : امثله
+⌯︙لعبة العكس : العكس
+⌯︙لعبة الاسئله : اسئله
+⌯︙لعبة الروليت : روليت
+⌯︙لعبة الحزوره : حزوره
+⌯︙لعبة الترتيب : ترتيب
+⌯︙لعبة المعاني : معاني
+⌯︙لعبة المختلف : المختلف
+⌯︙لعبة السمايلات : سمايلات
+⌯︙لعبة المحيبس : المحيبس
+⌯︙لعبة الرياضيات : رياضيات
+⌯︙لعبة الانكليزيه : انكليزيه
 ---------------------------------------------
 ⌯︙نقاطي • بيع نقاطي
 ---------------------------------------------
@@ -3870,8 +3870,8 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 
-if text and text == "اهمس" or text and text == "همسه" or text and text == "اريد بوت الهمسه" or text and text == "دزلي بوت الهمسه" or  text and text == "دزولي بوت الهمسه" then  Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙@HMSEBOT', 1, 'md') end
-if text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^اريد رابط الحذف$") or  text:match("^شمرلي رابط الحذف$") or text:match("^اريد رابط حذف$") then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌯︙اضغط للحصول على الرابط',nil,inline) return false end
+if text and text == "اهمس" or text and text == "همسه" or text and text == "اريد بوت الهمسه" or text and text == "دزلي بوت الهمسه" or  text and text == "دزولي بوت الهمسه" then  Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙@K0NBoT', 1, 'md') end
+if text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^اريد رابط الحذف$") or  text:match("^شمرلي رابط الحذف$") or text:match("^اريد رابط حذف$") then local inline = {{{text="اضغط هنا",url="https://t.me/U0SBoT"}}} SendInline(msg.chat_id_,'⌯︙اضغط للحصول على الرابط',nil,inline) return false end
 if text:match("^بوت الحذف$") or text:match("^اريد بوت الحذف$") or text:match("^اريد بوت حذف$") or text:match("^بوت حذف$") or text:match("^بوت حذف حسابات$") or text:match("^راح احذف$") then local inline = {{{text="اضغط هنا",url="https://t.me/U0SBoT"}}} SendInline(msg.chat_id_,'⌯︙اضغط للحصول على البوت',nil,inline) return false end
 if text:match("^جهاتي$") and ChCheck(msg) or text:match("^اضافاتي$") and ChCheck(msg) then add = (tonumber(DevMuslim:get(DevGRiNd..'Moslim:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙عدد جهاتك المضافه  *❨ "..add.." ❩* ", 1, 'md') end
 if text:match("^تعديلاتي$") or text:match("^سحكاتي$") and ChCheck(msg) then local edit_msg = DevMuslim:get(DevGRiNd..'Moslim:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙عدد تعديلاتك  *❨ "..edit_msg.." ❩* ", 1, 'md') end
@@ -8881,12 +8881,12 @@ local Help = DevMuslim:get(DevGRiNd..'Moslim:Help')
 local text =  [[
 ⌯︙اهلا بك في قائمة الاوامر   
 ---------------------------------------------
-⌯︙م1  اوامر الحمايه
-⌯︙م2  اوامر الادمنيه
-⌯︙م3  اوامر المدراء
-⌯︙م4  اوامر المنشئين
-⌯︙م5  اوامر المطورين
-⌯︙م6  اوامر الاعضاء
+⌯︙م1 : اوامر الحمايه
+⌯︙م2 : اوامر الادمنيه
+⌯︙م3 : اوامر المدراء
+⌯︙م4 : اوامر المنشئين
+⌯︙م5 : اوامر المطورين
+⌯︙م6 : اوامر الاعضاء
 ---------------------------------------------
 ⌯︙[Source Channel](https://t.me/JJJ0S)
 ]] 
