@@ -18,29 +18,29 @@ ServerDevGRiNd = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
 
 local AutoSet = function() 
 if not DevMuslim:get(ServerDevGRiNd.."IdDevGRiNd") then 
-io.write('\27[1;35m\nالان ارسل ايدي المطور الاساسي  \n\27[0;33;49m') 
+io.write('\27[1;35m\nالان ارسل ايدي المطور الاساسي⌯︙  \n\27[0;33;49m') 
 local SUDO = io.read():gsub(' ','') 
 if tostring(SUDO):match('%d+') then 
 io.write('\27[1;36mتم حفظ ايدي المطور الاساسي\n27[0;39;49m') 
 DevMuslim:set(ServerDevGRiNd.."IdDevGRiNd",SUDO) 
 else 
-print('\27[1;31m---------------------------------------------\nلم يتم حفظ ايدي المطور الاساسي ارسله مره اخرى\n---------------------------------------------') 
+print('\27[1;31m---------------------------------------------\nلم يتم حفظ ايدي المطور الاساسي ارسله مره اخرى⌯︙\n---------------------------------------------') 
 end 
 os.execute('lua GRiNd.lua') 
 end 
 if not DevMuslim:get(ServerDevGRiNd.."TokenDevGRiNd") then 
-io.write('\27[1;35m\nالان قم بارسال توكن البوت  \n\27[0;33;49m') 
+io.write('\27[1;35m\nالان قم بارسال توكن البوت⌯︙  \n\27[0;33;49m') 
 local token = io.read() 
 if token ~= '' then 
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe') 
 if res ~= 200 then 
-print('\27[1;31m---------------------------------------------\nالتوكن غير صحيح تاكد منه ثم ارسله\n---------------------------------------------') 
+print('\27[1;31m---------------------------------------------\nالتوكن غير صحيح تاكد منه ثم ارسله⌯︙\n---------------------------------------------') 
 else 
 io.write('\27[1;36mتم حفظ توكن البوت بنجاح\n27[0;39;49m') 
 DevMuslim:set(ServerDevGRiNd.."TokenDevGRiNd",token) 
 end  
 else 
-print('\27[1;31m---------------------------------------------\nلم يتم حفظ توكن البوت ارسله مره اخرى\n---------------------------------------------') 
+print('\27[1;31m---------------------------------------------\nلم يتم حفظ توكن البوت ارسله مره اخرى⌯︙\n---------------------------------------------') 
 end  
 os.execute('lua GRiNd.lua') 
 end 
@@ -98,7 +98,7 @@ done
 ]]) 
 file:close() 
 io.popen("mkdir Files")
-os.execute('./Moslim')
+os.execute('./GRiNd')
 end 
 create_config_auto()
 end
@@ -2892,7 +2892,7 @@ end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوت' then 
 NameBot = (DevMuslim:get(DevGRiNd..'Moslim:NameBot') or 'وايت بلاك')
-local DevGRiNdTEAM = {"لتكول بوت اسمي "..NameBot.."💞🤝","عندي اسم تره 💔","صيحولي "..NameBot.." كافي بوت 🔪","انت البوت لك"} 
+local DevGRiNdTEAM = {"لتكول بوت اسمي "..NameBot.."💞🤝","عندي اسم تره 💔","صيحولي "..NameBot.." كافي بوت ","انت البوت لك"} 
 DevMuslim2 = math.random(#DevGRiNdTEAM) 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, DevGRiNdTEAM[DevMuslim2] , 1, 'html') 
 return false
@@ -3916,7 +3916,7 @@ return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = { "لك جرجف @"..username.." احترم اسيادك لا اكتلك وازربب على كبرك،💩🖐🏿","هشش لك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل🔪",}
+local DevGRiNdTEAM = { "لك جرجف @"..username.." احترم اسيادك لا اكتلك وازربب على كبرك،💩🖐🏿","هشش لك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمك هالمره بلكي تبطل حيونه، 🤔","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل",}
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'html') 
 else  
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو غير موجود في المجموعه', 1, 'md') 
@@ -3928,7 +3928,7 @@ end
 if text:match("^هينه$") or text:match("^بعد هينه$") or text:match("^هينه بعد$") or text:match("^لك هينه$") or text:match("^هينها$") or text:match("^هينهه$") or text:match("^رزله$") or text:match("^رزلهه$") or text:match("^رزلها$") then
 function hena(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(DevGRiNd) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, 'شو تمضرط اكو واحد يهين نفسه؟, 1, 'md') 
+Dev_Muslim(msg.chat_id_, msg.id_, 1, 'شو تمضرط اكو واحد يهين نفسه؟', 1, 'md')
 return false  
 end  
 if tonumber(result.sender_user_id_) == tonumber(DevId) then  
@@ -3945,10 +3945,7 @@ return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد." 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = {"ها ابو ديوس","خويه بس فهمني وين تريد توصل والله اني اوصلك بطريقي","اخاف اكلك زباله هسه واضلم الزباله","خاب اكل خرة عود هوو لطيف المنيوك ولك انت فد واحد سگط المرضع ودودة وطيز وثقيل على المعدة 
-فاشل وتافه ومخنث واكيد تاخذ مصرفك من اهلك ياعريض ياطيز 
-بعد لاتدز رساله يازبالة المجتمع يا طفل يا زربة ياخرية يانعالات 
-شكد ما اسبك ماارتاح يا بلاع العيورة",} 
+local DevGRiNdTEAM = {"ها ابو ديوس","لك ها الفرخ","اكلك انتَ مو نفسك الجنت تتلزك عمود مسلم يصعدك مطور؟" } 
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -3959,16 +3956,16 @@ end
 if text:match("^بوسه$") or text:match("^بعد بوسه$") or text:match("^ضل بوس$") or text:match("^بوسه بعد$") or text:match("^بوسها$") or text:match("^بعد بوسها$") or text:match("^ضل بوس$") or text:match("^بوسها بعد$") or text:match("^بوسهه$") then
 function bosh(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(DevGRiNd) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, 'فهمنيي شلوون راح ابوس نفسيي؟💔', 1, 'md') 
+Dev_Muslim(msg.chat_id_, msg.id_, 1, 'فهمني شلون رح اكدر ابوس نفسي؟', 1, 'md') 
 return false  
 end  
 if tonumber(result.sender_user_id_) == tonumber(DevId) then  
-Dev_Muslim(msg.chat_id_, result.id_, 1, 'مواحح احلا بوسةة المطوريي😻🔥💗', 1, 'html')
+Dev_Muslim(msg.chat_id_, result.id_, 1, 'مواحح احلا بوسه لمطوري💔.', 1, 'html')
 return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = {"مواحح افيش عافيههه😍🔥💗","اممموواهح شهلعسل🥺🍯💘","مواحح،ءوفف اذوب🤤💗"} 
+local DevGRiNdTEAM = {"مواحح افيش عافيههه💗","اممموواهح شهلعسل🥺🍯💘","مواحح،ءوفف اذوب🤤💗"} 
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -3988,7 +3985,7 @@ return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = {"تعال حب محتاجيك🙂🍭","تعال يولل استاذك ايريدك🔪","يمعوود تعال يريدوك","تعال لك ديصيحوك"} 
+local DevGRiNdTEAM = {"تعال حب محتاجيك🙂🍭","تعال يولل استاذك ايريدك","يمعوود تعال يريدوك","تعال لك ديصيحوك"} 
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -4011,7 +4008,7 @@ return false
 end  
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = { "تعال حب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذك ايريدك🔪","يمعوود @"..username.." تعال يريدوك","تعال لك @"..username.." ديصيحوك",}
+local DevGRiNdTEAM = { "تعال حب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذك ايريدك","يمعوود @"..username.." تعال يريدوك","تعال لك @"..username.." ديصيحوك",}
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'html') 
 else  
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو غير موجود في المجموعه', 1, 'md') 
