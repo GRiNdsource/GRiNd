@@ -1156,23 +1156,23 @@ if text == '/start' or text == 'رجوع ،🔙‘' then
 if Sudo(msg) then 
 local Sudo_Welcome = '⌯︙مرحبا عزيزي المطور \n⌯︙انت المطور الاساسي هنا \n⌯︙اليك ازرار سورس كرايند \n⌯︙تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'وضع اسم البوت',' تحديث ⌁','وضع كليشه المطور'},
-{' المطورين ⌁',' الاحصائيات ⌁'},
-{' المجموعات ⌁','روابط الكروبات',' المشتركين ⌁'},
-{' تعطيل التواصل ⌁',' تفعيل التواصل ⌁'},
-{'تنظيف الكروبات',' قائمه العام ⌁','تنظيف المشتركين'},
+{'وضع اسم البوت',' تحديث ','وضع كليشه المطور'},
+{' المطورين ',' الاحصائيات '},
+{' المجموعات ','روابط الكروبات',' المشتركين '},
+{' تعطيل التواصل ',' تفعيل التواصل '},
+{'تنظيف الكروبات',' قائمه العام ','تنظيف المشتركين'},
 {'تعطيل ترحيب البوت','تفعيل ترحيب البوت'},
-{' تغير معلومات الترحيب ⌁'},
-{' تعطيل المغادره ⌁',' تفعيل المغادره ⌁'},
-{' تعطيل الاذاعه ⌁',' تفعيل الاذاعه ⌁'},
-{' اذاعه بالتثبيت ⌁'},
-{' اذاعه عام ⌁',' اذاعه خاص ⌁'},
-{' اذاعه عام بالتوجيه ⌁',' اذاعه خاص بالتوجيه ⌁'},
+{' تغير معلومات الترحيب '},
+{' تعطيل المغادره ',' تفعيل المغادره '},
+{' تعطيل الاذاعه ',' تفعيل الاذاعه '},
+{' اذاعه بالتثبيت '},
+{' اذاعه عام ',' اذاعه خاص '},
+{' اذاعه عام بالتوجيه ',' اذاعه خاص بالتوجيه '},
 {'~ تعيين كلايش الاوامر ~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
 {'جلب نسخه السورس','تحديث السورس','جلب نسخه الكروبات'},
-{' حذف رد عام ⌁',' الردود العام ⌁',' اضف رد عام ⌁'},
-{' حذف رد الخاص ⌁',' تعيين رد الخاص ⌁'},
+{' حذف رد عام ',' الردود العام ',' اضف رد عام '},
+{' حذف رد الخاص ',' تعيين رد الخاص '},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
 {'حذف كليشه الاشتراك','كليشه الاشتراك','تغير كليشه الاشتراك'},
 }
@@ -1280,12 +1280,12 @@ DevMuslim:del(DevGRiNd..'Moslim:Start:Bots')
 return false
 end
 if Sudo(msg) then
-if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == ' تعيين رد الخاص ⌁' then 
+if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == ' تعيين رد الخاص ' then 
 DevMuslim:set(DevGRiNd..'Moslim:Start:Bots',true) 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙ارسل لي كليشة الستارت الان', 1, 'md')
 return false
 end
-if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == ' حذف رد الخاص ⌁' then 
+if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == ' حذف رد الخاص ' then 
 DevMuslim:del(DevGRiNd..'Start:Bot') 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙تم حذف كليشة الستارت بنجاح', 1, 'md')
 end
@@ -1299,12 +1299,12 @@ end
 Dev_Muslim(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
-if text == 'تفعيل التواصل' or text == ' تفعيل التواصل ⌁' then   
+if text == 'تفعيل التواصل' or text == ' تفعيل التواصل ' then   
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل التواصل بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Texting:Pv') 
 end
-if text == 'تعطيل التواصل' or text == ' تعطيل التواصل ⌁' then  
+if text == 'تعطيل التواصل' or text == ' تعطيل التواصل ' then  
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل التواصل بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Texting:Pv',true) 
@@ -5694,7 +5694,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end
 
 if SudoBot(msg) then
-if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == " قائمه العام ⌁" and ChCheck(msg) then 
+if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == " قائمه العام " and ChCheck(msg) then 
 local BanAll = DevMuslim:smembers(DevGRiNd..'Moslim:BanAll:')
 local MuteAll = DevMuslim:smembers(DevGRiNd..'Moslim:MuteAll:')
 if #BanAll ~= 0 then 
@@ -5729,7 +5729,7 @@ end
 Dev_Muslim(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 
-if text == "المطورين" and ChCheck(msg) or text == " المطورين ⌁" and ChCheck(msg) then 
+if text == "المطورين" and ChCheck(msg) or text == " المطورين " and ChCheck(msg) then 
 local list = DevMuslim:smembers(DevGRiNd..'Moslim:SudoBot:')
 text = "⌯︙قائمة المطورين   \n---------------------------------------------\n"
 for k,v in pairs(list) do
@@ -6618,17 +6618,17 @@ return false
 end
 
 if SudoBot(msg) then
-if text and text == "الاحصائيات" and ChCheck(msg) or text and text == " الاحصائيات ⌁" then
+if text and text == "الاحصائيات" and ChCheck(msg) or text and text == " الاحصائيات " then
 local gps = DevMuslim:scard(DevGRiNd.."Moslim:Groups") local users = DevMuslim:scard(DevGRiNd.."Moslim:Users") 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙احصائيات البوت  \n⌯︙عدد المشتركين  ❨ '..users..' ❩\n⌯︙عدد المجموعات  ❨ '..gps..' ❩', 1, 'md')
 end
-if text and text == "المشتركين" and ChCheck(msg) or text and text == " المشتركين ⌁" then
+if text and text == "المشتركين" and ChCheck(msg) or text and text == " المشتركين " then
 local users = DevMuslim:scard(DevGRiNd.."Moslim:Users")
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عدد المشتركين  ❨ '..users..' ❩', 1, 'md')
 end
 end
 
-if text and text == 'المجموعات' and ChCheck(msg) or text and text == ' المجموعات ⌁' then
+if text and text == 'المجموعات' and ChCheck(msg) or text and text == ' المجموعات ' then
 if not SudoBot(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطورين فقط ', 1, 'md')
 else
@@ -7965,22 +7965,22 @@ DevMuslim:set(DevGRiNd..'Moslim:Lock:AllRed'..msg.chat_id_,true)
 end
 
 if Sudo(msg) then
-if text == 'تفعيل المغادره' or text == ' تفعيل المغادره ⌁' then 
+if text == 'تفعيل المغادره' or text == ' تفعيل المغادره ' then 
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل المغادره بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Left:Bot"..DevGRiNd)
 end
-if text == 'تعطيل المغادره' or text == ' تعطيل المغادره ⌁' then 
+if text == 'تعطيل المغادره' or text == ' تعطيل المغادره ' then 
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل المغادره بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Left:Bot"..DevGRiNd,true) 
 end 
-if text == 'تفعيل الاذاعه' or text == ' تفعيل الاذاعه ⌁' then 
+if text == 'تفعيل الاذاعه' or text == ' تفعيل الاذاعه ' then 
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الاذاعه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd)
 end
-if text == 'تعطيل الاذاعه' or text == ' تعطيل الاذاعه ⌁' then 
+if text == 'تعطيل الاذاعه' or text == ' تعطيل الاذاعه ' then 
 local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الاذاعه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd,true) 
@@ -8432,7 +8432,7 @@ end
 end
 end
 
-if text == "اذاعه بالخاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه خاص ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالخاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه خاص " and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevMuslim:get(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd) and not Sudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8499,7 +8499,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙تم اذاعة "..MoslimText.." ب�
 DevMuslim:del(DevGRiNd.."Moslim:Send:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end
 
-if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه عام ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه عام " and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevMuslim:get(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd) and not Sudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8566,7 +8566,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙تم اذاعة "..MoslimText.." ب�
 DevMuslim:del(DevGRiNd.."Moslim:Send:Gp" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end
 
-if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه عام بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه عام بالتوجيه " and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevMuslim:get(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd) and not Sudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8590,7 +8590,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙تم اذاعة رسالتك بال�
 DevMuslim:del(DevGRiNd.."Moslim:Send:FwdGp" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end
 
-if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه خاص بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه خاص بالتوجيه " and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevMuslim:get(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd) and not Sudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8614,7 +8614,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙تم اذاعة رسالتك بال�
 DevMuslim:del(DevGRiNd.."Moslim:Send:FwdPv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end
 
-if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه بالتثبيت ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == " اذاعه بالتثبيت " and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevMuslim:get(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd) and not Sudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8713,12 +8713,12 @@ end
 end
 
 text = msg.content_.text_
-if msg.content_.text_ == 'حذف رد عام' and Sudo(msg) or msg.content_.text_ == ' حذف رد عام ⌁' and Sudo(msg) or msg.content_.text_ == 'مسح رد عام' and Sudo(msg) then
+if msg.content_.text_ == 'حذف رد عام' and Sudo(msg) or msg.content_.text_ == ' حذف رد عام ' and Sudo(msg) or msg.content_.text_ == 'مسح رد عام' and Sudo(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙حسنا ارسل الكلمه لحذفها " ,  1, "md")
 return false
 end
-if msg.content_.text_ == 'اضف رد عام' and Sudo(msg) or msg.content_.text_ == ' اضف رد عام ⌁' and Sudo(msg) then
+if msg.content_.text_ == 'اضف رد عام' and Sudo(msg) or msg.content_.text_ == ' اضف رد عام ' and Sudo(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Add:AllRed"..msg.sender_user_id_,'SetAllRed')
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙حسنا ارسل الكلمه الان " ,  1, "md")
 return false    end
@@ -8784,7 +8784,7 @@ return false
 end
 end
 
-if  msg.content_.text_ == "ردود المطور" and Sudo(msg) or msg.content_.text_ == "الردود العام" and Sudo(msg) or msg.content_.text_ == "ردود العام" and Sudo(msg) or msg.content_.text_ == " الردود العام ⌁" and Sudo(msg) then
+if  msg.content_.text_ == "ردود المطور" and Sudo(msg) or msg.content_.text_ == "الردود العام" and Sudo(msg) or msg.content_.text_ == "ردود العام" and Sudo(msg) or msg.content_.text_ == " الردود العام " and Sudo(msg) then
 local redod = DevMuslim:smembers(DevGRiNd.."Moslim:Sudo:AllRed")
 MsgRep = '⌯︙ردود المطور   \n---------------------------------------------\n'
 for k,v in pairs(redod) do
@@ -9292,7 +9292,7 @@ io.popen("rm -rf ~/.telegram-cli/data/profile_photo/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
-if text == 'تحديث' or text == 'تحديث البوت' or text == ' تحديث ⌁' then  
+if text == 'تحديث' or text == 'تحديث البوت' or text == ' تحديث ' then  
 dofile('GRiNd.lua') 
 io.popen("rm -rf ~/.telegram-cli/data/audio/*") 
 io.popen("rm -rf ~/.telegram-cli/data/document/*") 
@@ -9488,7 +9488,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙تم تعطيل الترحيب عن�
 DevMuslim:set(DevGRiNd..'Moslim:Lock:BotWelcome',true)
 return false
 end 
-if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == ' تغير معلومات الترحيب ⌁') and Sudo(msg) then    
+if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == ' تغير معلومات الترحيب ') and Sudo(msg) then    
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙ارسل لي نص الترحيب', 1, 'md') 
 DevMuslim:del(DevGRiNd..'Moslim:Text:BotWelcome')
 DevMuslim:del(DevGRiNd..'Moslim:Photo:BotWelcome')
