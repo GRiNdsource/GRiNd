@@ -1300,12 +1300,12 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
 if text == 'تفعيل التواصل' or text == ' تفعيل التواصل ' then   
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل التواصل بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل التواصل بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Texting:Pv') 
 end
 if text == 'تعطيل التواصل' or text == ' تعطيل التواصل ' then  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل التواصل بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل التواصل بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Texting:Pv',true) 
 end
@@ -1500,7 +1500,7 @@ else
 LinkGroup = 'لا يوجد'
 end
 DevMuslim:set(DevGRiNd.."Moslim:Groups:Links"..msg.chat_id_,LinkGroup) 
-SendText(DevId,"⌯︙تم تفعيل مجموعه جديده   \n---------------------------------------------\n⌯︙بواسطة  "..Name.."\n⌯︙موقعه في المجموعه  "..status.."\n⌯︙اسم المجموعه  ["..NameChat.."]\n⌯︙عدد اعضاء المجموعه  ❨ *"..NumMem.."* ❩\n⌯︙ايدي المجموعه   \n❨ `"..msg.chat_id_.."` ❩\n⌯︙رابط المجموعه  \n❨ ["..LinkGroup.."] ❩\n---------------------------------------------\n⌯︙الوقت  "..os.date("%I:%M%p").."\n⌯︙التاريخ  "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⌯︙تم تفعيل مجموعه جديده :  \n---------------------------------------------\n⌯︙بواسطة : "..Name.."\n⌯︙موقعه في المجموعه : "..status.."\n⌯︙اسم المجموعه : ["..NameChat.."]\n⌯︙عدد اعضاء المجموعه : ❨ *"..NumMem.."* ❩\n⌯︙ايدي المجموعه :  \n❨ `"..msg.chat_id_.."` ❩\n⌯︙رابط المجموعه : \n❨ ["..LinkGroup.."] ❩\n---------------------------------------------\n⌯︙الوقت : "..os.date("%I:%M%p").."\n⌯︙التاريخ : "..os.date("%Y/%m/%d").."",0,'md')
 end
 end end
 end,nil)
@@ -3693,7 +3693,7 @@ if not Sudo(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevMuslim:del(DevGRiNd..'DevMuslim2') DevMuslim:del(DevGRiNd..'DevMuslim3')
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الاشتراك الاجباري'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الاشتراك الاجباري'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 return false  
@@ -3775,12 +3775,12 @@ end
 
 if text == 'تعطيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Kick:Me"..msg.chat_id_, true)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل امر اطردني'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل امر اطردني'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevMuslim:del(DevGRiNd.."Moslim:Kick:Me"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل امر اطردني'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل امر اطردني'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 
@@ -3800,12 +3800,12 @@ end
 
 if text == 'تعطيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Del:Me"..msg.chat_id_, true)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل امر نزلني'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل امر نزلني'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevMuslim:del(DevGRiNd.."Moslim:Del:Me"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل امر نزلني'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل امر نزلني'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 
@@ -3980,7 +3980,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, ' بس فهمني شلون رح اصيح ن
 return false  
 end  
 if tonumber(result.sender_user_id_) == tonumber(DevId) then  
-Dev_Muslim(msg.chat_id_, result.id_, 1, 'تعال مطوريي محتاجيك', 1, 'html')
+Dev_Muslim(msg.chat_id_, result.id_, 1, 'تعال مطوري محتاجيك', 1, 'html')
 return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
@@ -4003,7 +4003,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, 'فهمنيي شلوون راح اصيح ن
 return false 
 end  
 if tonumber(result.id_) == tonumber(DevId) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, 'تعال مطوريي محتاجيك @'..username, 1, 'html') 
+Dev_Muslim(msg.chat_id_, msg.id_, 1, 'تعال مطوري محتاجيك @'..username, 1, 'html') 
 return false  
 end  
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
@@ -4792,22 +4792,22 @@ end end end
 if Constructor(msg) then
 if text:match("^تفعيل الحظر$") and ChCheck(msg) or text:match("^تفعيل الطرد$") and ChCheck(msg) then
 DevMuslim:del(DevGRiNd.."Moslim:Lock:KickBan"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الطرد والحظر'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الطرد والحظر'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if text:match("^تعطيل الحظر$") and ChCheck(msg) or text:match("^تعطيل الطرد$") and ChCheck(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Lock:KickBan"..msg.chat_id_,"true")
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الطرد والحظر'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الطرد والحظر'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if text:match("^تفعيل الكتم$") and ChCheck(msg) or text:match("^تفعيل التقييد$") and ChCheck(msg) then
 DevMuslim:del(DevGRiNd.."Moslim:Lock:MuteTked"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الكتم والتقيد'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الكتم والتقيد'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if text:match("^تعطيل الكتم$") and ChCheck(msg) or text:match("^تعطيل التقييد$") and ChCheck(msg) then
 DevMuslim:set(DevGRiNd.."Moslim:Lock:MuteTked"..msg.chat_id_,"true")
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الكتم والتقيد'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الكتم والتقيد'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -5480,7 +5480,7 @@ end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
 DevMuslim:set(DevGRiNd..'Moslim:PinnedMsg'..msg.chat_id_,msg.reply_to_message_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تثبيت الرساله بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تثبيت الرساله بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false  
 end
@@ -6161,7 +6161,7 @@ local List = {
 ]]}
 local Text_Rand = List[math.random(#List)]
 DevMuslim:set(DevGRiNd.."Moslim:GpIds:Text"..msg.chat_id_,Text_Rand)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تغيير كليشة الايدي'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تغيير كليشة الايدي'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 
@@ -6183,7 +6183,7 @@ DevMuslim:set(DevGRiNd.."Moslim:AllIds:Text",text)
 return false
 end
 if text and text:match("^حذف الايدي العام$") or text and text:match("^مسح الايدي العام$") or text and text:match("^حذف كليشة الايدي$") then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف كليشة الايدي العامه'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف كليشة الايدي العامه'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:AllIds:Text")
 end
@@ -6206,7 +6206,7 @@ DevMuslim:set(DevGRiNd.."Moslim:GpIds:Text"..msg.chat_id_,text)
 return false
 end
 if text and text:match("^حذف الايدي$") and ChCheck(msg) or text and text:match("^مسح الايدي$") and ChCheck(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف كليشة الايدي'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف كليشة الايدي'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:GpIds:Text"..msg.chat_id_)
 end
@@ -6339,7 +6339,7 @@ if text and text:match("^قفل (.*)$") and ChCheck(msg) then
 local lockptf = {string.match(text, "^(قفل) (.*)$")}
 if lockptf[2] == "التعديل" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التعديل بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التعديل بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_,true)
 else
@@ -6348,7 +6348,7 @@ end
 end
 if lockptf[2] == "التعديل الميديا" or lockptf[2] == "تعديل الميديا" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل تعديل الميديا\n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل تعديل الميديا\n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_,true)
 else
@@ -6357,7 +6357,7 @@ end
 end
 if lockptf[2] == "الفارسيه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Farsi'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الفارسيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الفارسيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Farsi'..msg.chat_id_,true)
 else
@@ -6366,7 +6366,7 @@ end
 end
 if lockptf[2] == "الفشار" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Fshar'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الفشار بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الفشار بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Fshar'..msg.chat_id_)
 else
@@ -6375,7 +6375,7 @@ end
 end
 if lockptf[2] == "الطائفيه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Taf'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الطائفيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الطائفيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Taf'..msg.chat_id_)
 else
@@ -6384,7 +6384,7 @@ end
 end
 if lockptf[2] == "الكفر" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Kfr'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الكفر بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الكفر بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Kfr'..msg.chat_id_)
 else
@@ -6393,7 +6393,7 @@ end
 end
 if lockptf[2] == "الفارسيه بالطرد" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:FarsiBan'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الفارسيه بالطرد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الفارسيه بالطرد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:FarsiBan'..msg.chat_id_,true)
 else
@@ -6401,45 +6401,45 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الفارسيه بالطرد بال
 end
 end
 if lockptf[2] == "البوتات" or lockptf[2] == "البوتات بالحذف" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالحذف \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالحذف \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_,"del")  
 end
 if lockptf[2] == "البوتات بالطرد" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالطرد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالطرد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_,"kick")  
 end
 if lockptf[2] == "البوتات بالتقييد" or lockptf[2] == "البوتات بالتقيد" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالتقييد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل البوتات بالتقييد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_,"ked")  
 end
 if lockptf[2] == "التكرار" or lockptf[2] == "التكرار بالحذف" then 
 DevMuslim:hset(DevGRiNd.."Moslim:Spam:Group:User"..msg.chat_id_ ,"Spam:User","del")  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالحذف \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالحذف \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if lockptf[2] == "التكرار بالطرد" then 
 DevMuslim:hset(DevGRiNd.."Moslim:Spam:Group:User"..msg.chat_id_ ,"Spam:User","kick")  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالطرد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالطرد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if lockptf[2] == "التكرار بالتقيد" or lockptf[2] == "التكرار بالتقييد" then 
 DevMuslim:hset(DevGRiNd.."Moslim:Spam:Group:User"..msg.chat_id_ ,"Spam:User","keed")  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالتقييد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالتقييد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if lockptf[2] == "التكرار بالكتم" then 
 DevMuslim:hset(DevGRiNd.."Moslim:Spam:Group:User"..msg.chat_id_ ,"Spam:User","mute")  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالكتم \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التكرار بالكتم \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if BasicConstructor(msg) then
 if lockptf[2] == "التثبيت" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Pin'..msg.chat_id_) then
 tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  DevMuslim:set(DevGRiNd.."Moslim:PinnedMsg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التثبيت بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التثبيت بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Pin'..msg.chat_id_,true)
 DevMuslim:sadd(DevGRiNd.."Moslim:Lock:Pinpin",msg.chat_id_) 
@@ -6471,7 +6471,7 @@ if text and text == 'تفعيل الايدي بالصوره' and ChCheck(msg) th
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الايدي بالصوره بالتاكيد مفعل', 1, 'md')
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الايدي بالصوره'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الايدي بالصوره'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Id:Photo'..msg.chat_id_)
 end end
@@ -6479,7 +6479,7 @@ if text and text == 'تعطيل الايدي بالصوره' and ChCheck(msg) th
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الايدي بالصوره بالتاكيد معطل', 1, 'md')
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الايدي بالصوره'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الايدي بالصوره'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Id:Photo'..msg.chat_id_,true)
 end end 
@@ -6488,7 +6488,7 @@ if text and text == 'تفعيل الايدي' and ChCheck(msg) then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Id'..msg.chat_id_) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الايدي بالتاكيد مفعل ', 1, 'md')
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الايدي بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الايدي بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Id'..msg.chat_id_)
 end end 
@@ -6496,7 +6496,7 @@ if text and text == 'تعطيل الايدي' and ChCheck(msg) then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Id'..msg.chat_id_) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الايدي بالتاكيد معطل ', 1, 'md')
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الايدي بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الايدي بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Id'..msg.chat_id_,true)
 end end
@@ -6525,12 +6525,12 @@ end
 
 if Admin(msg) then
 if text and text:match("^تفعيل الترحيب$") and ChCheck(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الترحيب بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الترحيب بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Lock:Welcome"..msg.chat_id_,true)
 end
 if text and text:match("^تعطيل الترحيب$") and ChCheck(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الترحيب بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الترحيب بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Lock:Welcome"..msg.chat_id_)
 end
@@ -6550,7 +6550,7 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙ارسل لي الترحيب الا�
 DevMuslim:set(DevGRiNd..'Moslim:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 if text and text:match("^حذف الترحيب$") and ChCheck(msg) or text and text:match("^حذف ترحيب$") and ChCheck(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف الترحيب \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف الترحيب \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Groups:Welcomes'..msg.chat_id_)
 end
@@ -6736,12 +6736,12 @@ end
 end
 
 if text == "تفعيل امسح" and Constructor(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل امسح بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل امسح بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Clean'..msg.chat_id_,true)  
 end
 if text == "تعطيل امسح" and Constructor(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل امسح بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل امسح بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Clean'..msg.chat_id_) 
 end
@@ -6800,7 +6800,7 @@ if text and text:match("^فتح (.*)$") and ChCheck(msg) then
 local unlockpts = {string.match(text, "^(فتح) (.*)$")}
 if unlockpts[2] == "التعديل" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح التعديل بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح التعديل بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_)
 else
@@ -6809,7 +6809,7 @@ end
 end
 if unlockpts[2] == "التعديل الميديا" or unlockpts[2] == "تعديل الميديا" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح تعديل الميديا\n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح تعديل الميديا\n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:EditMsgs'..msg.chat_id_)
 else
@@ -6818,7 +6818,7 @@ end
 end
 if unlockpts[2] == "الفارسيه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Farsi'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الفارسيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الفارسيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Farsi'..msg.chat_id_)
 else
@@ -6827,7 +6827,7 @@ end
 end
 if unlockpts[2] == "الفشار" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Fshar'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الفشار بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الفشار بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Fshar'..msg.chat_id_,true)
 else
@@ -6836,7 +6836,7 @@ end
 end
 if unlockpts[2] == "الطائفيه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Taf'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الطائفيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الطائفيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Taf'..msg.chat_id_,true)
 else
@@ -6845,7 +6845,7 @@ end
 end
 if unlockpts[2] == "الكفر" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Kfr'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الكفر بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الكفر بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Kfr'..msg.chat_id_,true)
 else
@@ -6854,7 +6854,7 @@ end
 end
 if unlockpts[2] == "الفارسيه بالطرد" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:FarsiBan'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الفارسيه بالطرد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الفارسيه بالطرد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:FarsiBan'..msg.chat_id_)
 else
@@ -6862,29 +6862,29 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙الفارسيه بالطرد بال
 end
 end
 if unlockpts[2] == "البوتات" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_)  
 end
 if unlockpts[2] == "البوتات بالطرد" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بالطرد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بالطرد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_)  
 end
 if unlockpts[2] == "البوتات بالتقييد" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بالتقييد \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح البوتات بالتقييد \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Lock:Bots"..msg.chat_id_)  
 end
 if unlockpts[2] == "التكرار" then 
 DevMuslim:hdel(DevGRiNd.."Moslim:Spam:Group:User"..msg.chat_id_ ,"Spam:User")  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح التكرار بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح التكرار بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if BasicConstructor(msg) then
 if unlockpts[2] == "التثبيت" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Pin'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح التثبيت بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح التثبيت بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Pin'..msg.chat_id_)
 DevMuslim:srem(DevGRiNd.."Moslim:Lock:Pinpin",msg.chat_id_)
@@ -6899,7 +6899,7 @@ if text and text:match("^قفل (.*)$") and ChCheck(msg) then
 local LockText = {string.match(text, "^(قفل) (.*)$")}
 if LockText[2] == "الدردشه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Text'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الدردشه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الدردشه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Text'..msg.chat_id_,true)
 else
@@ -6908,7 +6908,7 @@ end
 end
 if LockText[2] == "الاونلاين" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Inline'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الاونلاين بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الاونلاين بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Inline'..msg.chat_id_,true)
 else
@@ -6917,7 +6917,7 @@ end
 end
 if LockText[2] == "الصور" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Photo'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الصور بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الصور بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Photo'..msg.chat_id_,true)
 else
@@ -6926,7 +6926,7 @@ end
 end
 if LockText[2] == "الكلايش" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Spam'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الكلايش بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الكلايش بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Spam'..msg.chat_id_,true)
 else
@@ -6935,7 +6935,7 @@ end
 end
 if LockText[2] == "الدخول" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Join'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الدخول بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الدخول بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Join'..msg.chat_id_,true)
 else
@@ -6944,7 +6944,7 @@ end
 end
 if LockText[2] == "الفيديو" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Videos'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الفيديو بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الفيديو بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Videos'..msg.chat_id_,true)
 else
@@ -6953,7 +6953,7 @@ end
 end
 if LockText[2] == "المتحركه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Gifs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل المتحركه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل المتحركه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Gifs'..msg.chat_id_,true)
 else
@@ -6962,7 +6962,7 @@ end
 end
 if LockText[2] == "الاغاني" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Music'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الاغاني بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الاغاني بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Music'..msg.chat_id_,true)
 else
@@ -6971,7 +6971,7 @@ end
 end
 if LockText[2] == "الصوت" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Voice'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الصوت بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الصوت بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Voice'..msg.chat_id_,true)
 else
@@ -6980,7 +6980,7 @@ end
 end
 if LockText[2] == "الروابط" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Links'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الروابط بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الروابط بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Links'..msg.chat_id_,true)
 else
@@ -6989,7 +6989,7 @@ end
 end
 if LockText[2] == "المواقع" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Location'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل المواقع بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل المواقع بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Location'..msg.chat_id_,true)
 else
@@ -6998,7 +6998,7 @@ end
 end
 if LockText[2] == "المعرف" or LockText[2] == "المعرفات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Tags'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل المعرفات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل المعرفات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Tags'..msg.chat_id_,true)
 else
@@ -7007,7 +7007,7 @@ end
 end
 if LockText[2] == "الملفات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Document'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الملفات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الملفات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Document'..msg.chat_id_,true)
 else
@@ -7016,7 +7016,7 @@ end
 end
 if LockText[2] == "الهاشتاك" or LockText[2] == "التاك" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Hashtak'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الهاشتاك بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الهاشتاك بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Hashtak'..msg.chat_id_,true)
 else
@@ -7025,7 +7025,7 @@ end
 end
 if LockText[2] == "الجهات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Contact'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الجهات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الجهات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Contact'..msg.chat_id_,true)
 else
@@ -7034,7 +7034,7 @@ end
 end
 if LockText[2] == "الشبكات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:WebLinks'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الشبكات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الشبكات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:WebLinks'..msg.chat_id_,true) 
 else
@@ -7043,7 +7043,7 @@ end
 end
 if LockText[2] == "العربيه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Arabic'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل العربيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل العربيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Arabic'..msg.chat_id_,true)
 else
@@ -7052,7 +7052,7 @@ end
 end
 if LockText[2] == "الانكليزيه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:English'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الانكليزيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الانكليزيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:English'..msg.chat_id_,true)
 else
@@ -7061,7 +7061,7 @@ end
 end
 if LockText[2] == "الملصقات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Stickers'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الملصقات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الملصقات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Stickers'..msg.chat_id_,true)
 else
@@ -7070,7 +7070,7 @@ end
 end
 if LockText[2] == "الماركداون" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Markdown'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الماركداون بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الماركداون بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Markdown'..msg.chat_id_,true)
 else
@@ -7079,7 +7079,7 @@ end
 end
 if LockText[2] == "الاشعارات" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:TagServr'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل الاشعارات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل الاشعارات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:TagServr'..msg.chat_id_,true)
 else
@@ -7088,7 +7088,7 @@ end
 end
 if LockText[2] == "التوجيه" then
 if not DevMuslim:get(DevGRiNd..'Moslim:Lock:Forwards'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التوجيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التوجيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Forwards'..msg.chat_id_,true)
 else
@@ -7103,7 +7103,7 @@ if text and text:match("^فتح (.*)$") and ChCheck(msg) then
 local UnLockText = {string.match(text, "^(فتح) (.*)$")}
 if UnLockText[2] == "الدردشه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Text'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الدردشه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الدردشه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Text'..msg.chat_id_)
 else
@@ -7112,7 +7112,7 @@ end
 end
 if UnLockText[2] == "الصور" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Photo'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الصور بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الصور بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Photo'..msg.chat_id_)
 else
@@ -7121,7 +7121,7 @@ end
 end
 if UnLockText[2] == "الكلايش" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Spam'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الكلايش بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الكلايش بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Spam'..msg.chat_id_)
 else
@@ -7130,7 +7130,7 @@ end
 end
 if UnLockText[2] == "الدخول" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Join'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الدخول بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الدخول بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Join'..msg.chat_id_)
 else
@@ -7139,7 +7139,7 @@ end
 end
 if UnLockText[2] == "الفيديو" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Videos'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الفيديو بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الفيديو بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Videos'..msg.chat_id_)
 else
@@ -7148,7 +7148,7 @@ end
 end
 if UnLockText[2] == "الملفات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Document'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الملفات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الملفات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Document'..msg.chat_id_)
 else
@@ -7157,7 +7157,7 @@ end
 end
 if UnLockText[2] == "الاونلاين" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Inline'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الاونلاين بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الاونلاين بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Inline'..msg.chat_id_)
 else
@@ -7166,7 +7166,7 @@ end
 end
 if UnLockText[2] == "الماركداون" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Markdown'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الماركداون بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الماركداون بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Markdown'..msg.chat_id_)
 else
@@ -7175,7 +7175,7 @@ end
 end
 if UnLockText[2] == "المتحركه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Gifs'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح المتحركه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح المتحركه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Gifs'..msg.chat_id_)
 else
@@ -7184,7 +7184,7 @@ end
 end
 if UnLockText[2] == "الاغاني" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Music'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الاغاني بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الاغاني بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Music'..msg.chat_id_)
 else
@@ -7193,7 +7193,7 @@ end
 end
 if UnLockText[2] == "الصوت" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Voice'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الصوت بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الصوت بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Voice'..msg.chat_id_)
 else
@@ -7202,7 +7202,7 @@ end
 end
 if UnLockText[2] == "الروابط" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Links'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الروابط بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الروابط بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Links'..msg.chat_id_)
 else
@@ -7211,7 +7211,7 @@ end
 end
 if UnLockText[2] == "المواقع" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Location'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح المواقع بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح المواقع بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Location'..msg.chat_id_)
 else
@@ -7220,7 +7220,7 @@ end
 end
 if UnLockText[2] == "المعرف" or UnLockText[2] == "المعرفات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Tags'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح المعرفات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح المعرفات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Tags'..msg.chat_id_)
 else
@@ -7229,7 +7229,7 @@ end
 end
 if UnLockText[2] == "الهاشتاك" or UnLockText[2] == "التاك" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Hashtak'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الهاشتاك بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الهاشتاك بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Hashtak'..msg.chat_id_)
 else
@@ -7238,7 +7238,7 @@ end
 end
 if UnLockText[2] == "الجهات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Contact'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الجهات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الجهات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Contact'..msg.chat_id_)
 else
@@ -7247,7 +7247,7 @@ end
 end
 if UnLockText[2] == "الشبكات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:WebLinks'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الشبكات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الشبكات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:WebLinks'..msg.chat_id_)
 else
@@ -7256,7 +7256,7 @@ end
 end
 if UnLockText[2] == "العربيه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Arabic'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح العربيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح العربيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Arabic'..msg.chat_id_)
 else
@@ -7265,7 +7265,7 @@ end
 end
 if UnLockText[2] == "الانكليزيه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:English'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الانكليزيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الانكليزيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:English'..msg.chat_id_)
 else
@@ -7274,7 +7274,7 @@ end
 end
 if UnLockText[2] == "الاشعارات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:TagServr'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الاشعارات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الاشعارات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:TagServr'..msg.chat_id_)
 else
@@ -7283,7 +7283,7 @@ end
 end
 if UnLockText[2] == "الملصقات" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Stickers'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح الملصقات بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح الملصقات بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Stickers'..msg.chat_id_)
 else
@@ -7292,7 +7292,7 @@ end
 end
 if UnLockText[2] == "التوجيه" then
 if DevMuslim:get(DevGRiNd..'Moslim:Lock:Forwards'..msg.chat_id_) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح التوجيه بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح التوجيه بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Forwards'..msg.chat_id_)
 else
@@ -7311,7 +7311,7 @@ LockList ={'Moslim:Lock:Links','Moslim:Lock:Contact','Moslim:Lock:Forwards','Mos
 for i,Lock in pairs(LockList) do
 DevMuslim:set(DevGRiNd..Lock..msg.chat_id_,true)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل التفليش بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل التفليش بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -7324,7 +7324,7 @@ UnLockList ={'Moslim:Lock:Links','Moslim:Lock:Contact','Moslim:Lock:Forwards','M
 for i,UnLock in pairs(UnLockList) do
 DevMuslim:del(DevGRiNd..UnLock..msg.chat_id_)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح التفليش بنجاح \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح التفليش بنجاح \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -7339,7 +7339,7 @@ LockList ={'Moslim:Lock:EditMsgs','Moslim:Lock:Farsi','Moslim:Lock:TagServr','Mo
 for i,Lock in pairs(LockList) do
 DevMuslim:set(DevGRiNd..Lock..msg.chat_id_,true)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم قفل جميع الاوامر \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم قفل جميع الاوامر \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -7352,7 +7352,7 @@ UnLockList ={'Moslim:Lock:EditMsgs','Moslim:Lock:Text','Moslim:Lock:Arabic','Mos
 for i,UnLock in pairs(UnLockList) do
 DevMuslim:del(DevGRiNd..UnLock..msg.chat_id_)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم فتح جميع الاوامر \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم فتح جميع الاوامر \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -7496,82 +7496,82 @@ local txtss = {string.match(text, "^(مسح) (.*)$")}
 if Sudo(msg) then 
 if txts[2] == 'المطورين' or txtss[2] == 'المطورين' then
 DevMuslim:del(DevGRiNd..'Moslim:SudoBot:')
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المطورين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المطورين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if txts[2] == 'قائمه العام' or txtss[2] == 'قائمه العام' then
 DevMuslim:del(DevGRiNd..'Moslim:BanAll:')
 DevMuslim:del(DevGRiNd..'Moslim:MuteAll:')
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة العام \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة العام \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
 if SudoBot(msg) then
 if txts[2] == 'الادمنيه العامين' or txts[2] == 'الادمنيه العام' or txtss[2] == 'الادمنيه العامين' or txtss[2] == 'الادمنيه العام' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف الادمنيه العامين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف الادمنيه العامين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:AdminAll:')
 end
 if txts[2] == 'المميزين عام' or txts[2] == 'المميزين العامين' or txtss[2] == 'المميزين عام' or txtss[2] == 'المميزين العامين' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المميزين عام \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المميزين عام \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:VipAll:')
 end
 if txts[2] == 'المدراء العامين' or txts[2] == 'المدراء العام' or txtss[2] == 'المدراء العامين' or txtss[2] == 'المدراء العام' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المدراء العامين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المدراء العامين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:ManagerAll:')
 end
 end
 if MoslimConstructor(msg) then
 if txts[2] == 'المنشئين الاساسيين' or txtss[2] == 'المنشئين الاساسيين' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المنشئين الاساسيين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المنشئين الاساسيين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:BasicConstructor:'..msg.chat_id_)
 end
 end
 if BasicConstructor(msg) then
 if txts[2] == 'المنشئين' or txtss[2] == 'المنشئين' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المنشئين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المنشئين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Constructor:'..msg.chat_id_)
 end end
 if Constructor(msg) then
 if txts[2] == 'المدراء' or txtss[2] == 'المدراء' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المدراء \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المدراء \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Managers:'..msg.chat_id_)
 end 
 if txts[2] == 'المنظفين' or txtss[2] == 'المنظفين' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المنظفين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المنظفين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Cleaner:'..msg.chat_id_)
 end end
 if Manager(msg) then
 if txts[2] == 'الادمنيه' or txtss[2] == 'الادمنيه' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف الادمنيه \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف الادمنيه \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Admins:'..msg.chat_id_)
 end
 end
 if txts[2] == 'المطايه' or txtss[2] == 'المطايه' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المطايه \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المطايه \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'User:Donky:'..msg.chat_id_)
 end
 if txts[2] == 'الرابط' or txtss[2] == 'الرابط' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف رابط المجموعه \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف رابط المجموعه \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Groups:Links"..msg.chat_id_)
 end
 if txts[2] == 'المميزين' or txtss[2] == 'المميزين' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المميزين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المميزين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:VipMem:'..msg.chat_id_)
 end
 if txts[2] == 'المكتومين' or txtss[2] == 'المكتومين' then
 DevMuslim:del(DevGRiNd..'Moslim:Muted:'..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المكتومين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المكتومين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if txts[2] == 'المقيدين' or txtss[2] == 'المقيدين' then     
@@ -7580,16 +7580,16 @@ for k,v in pairs(list) do
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..v.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True") 
 DevMuslim:srem(DevGRiNd..'Moslim:Tkeed:'..msg.chat_id_, v)
 end 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المقيدين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المقيدين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if txts[2] == 'قائمه المنع' or txtss[2] == 'قائمه المنع' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة المنع \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة المنع \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Filters:'..msg.chat_id_)
 end
 if txts[2] == 'قوائم المنع' or txtss[2] == 'قوائم المنع' then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قوائم المنع \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قوائم المنع \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Filters:'..msg.chat_id_)
 DevMuslim:del(DevGRiNd.."Moslim:FilterAnimation"..msg.chat_id_)
@@ -7598,17 +7598,17 @@ DevMuslim:del(DevGRiNd.."Moslim:FilterSteckr"..msg.chat_id_)
 end
 if txts[2] == 'قائمه منع المتحركات' or txtss[2] == 'قائمه منع المتحركات' then     
 DevMuslim:del(DevGRiNd.."Moslim:FilterAnimation"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع المتحركات \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع المتحركات \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if txts[2] == 'قائمه منع الصور' or txtss[2] == 'قائمه منع الصور' then     
 DevMuslim:del(DevGRiNd.."Moslim:FilterPhoto"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع الصور \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع الصور \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 if txts[2] == 'قائمه منع الملصقات' or txtss[2] == 'قائمه منع الملصقات' then     
 DevMuslim:del(DevGRiNd.."Moslim:FilterSteckr"..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع الملصقات \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف قائمة منع الملصقات \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -7779,12 +7779,12 @@ Dev_Muslim(msg.chat_id_, msg.id_, 1, rules, 1, nil)
 end
 
 if text == "تفعيل الزخرفه" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الزخرفه بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الزخرفه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Zrf:Moslim'..msg.chat_id_) 
 end
 if text == "تعطيل الزخرفه" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الزخرفه بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الزخرفه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Zrf:Moslim'..msg.chat_id_,true)  
 end
@@ -7830,12 +7830,12 @@ end
 end
 
 if text == "تفعيل الابراج" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الابراج بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الابراج بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Brg:Moslim'..msg.chat_id_) 
 end
 if text == "تعطيل الابراج" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الابراج بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الابراج بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Brg:Moslim'..msg.chat_id_,true)  
 end
@@ -7851,12 +7851,12 @@ end
 end
 
 if text == "تفعيل نسبه الحب" and Manager(msg) and SourceCh(msg) or text == "تفعيل نسبة الحب" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل نسبة الحب'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل نسبة الحب'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Nsba:Moslim'..msg.chat_id_) 
 end
 if text == "تعطيل نسبه الحب" and Manager(msg) and SourceCh(msg) or text == "تعطيل نسبة الحب" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل نسبة الحب'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل نسبة الحب'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Nsba:Moslim'..msg.chat_id_,true)  
 end
@@ -7880,12 +7880,12 @@ return false
 end
 
 if text == "تفعيل حساب العمر" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل حساب العمر'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل حساب العمر'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Age:Moslim'..msg.chat_id_) 
 end
 if text == "تعطيل حساب العمر" and Manager(msg) and SourceCh(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل حساب العمر'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل حساب العمر'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Age:Moslim'..msg.chat_id_,true)  
 end
@@ -7932,56 +7932,56 @@ if text == "الطائفيه" then if DevMuslim:get(DevGRiNd..'Moslim:Lock:Taf'.
 end
 
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل كشف الاعدادات'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل كشف الاعدادات'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:LockSettings'..msg.chat_id_,true)  
 end
 if text == 'تعطيل كشف الاعدادات' and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل كشف الاعدادات'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل كشف الاعدادات'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:LockSettings'..msg.chat_id_) 
 end
 
 if text == 'تفعيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل ردود المدير'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل ردود المدير'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:GpRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل ردود المدير'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل ردود المدير'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:GpRed'..msg.chat_id_,true)
 end
 
 if text == 'تفعيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل ردود المطور'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل ردود المطور'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:AllRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل ردود المطور'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل ردود المطور'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:AllRed'..msg.chat_id_,true)
 end
 
 if Sudo(msg) then
 if text == 'تفعيل المغادره' or text == ' تفعيل المغادره ' then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل المغادره بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل المغادره بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Left:Bot"..DevGRiNd)
 end
 if text == 'تعطيل المغادره' or text == ' تعطيل المغادره ' then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل المغادره بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل المغادره بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Left:Bot"..DevGRiNd,true) 
 end 
 if text == 'تفعيل الاذاعه' or text == ' تفعيل الاذاعه ' then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الاذاعه بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الاذاعه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd)
 end
 if text == 'تعطيل الاذاعه' or text == ' تعطيل الاذاعه ' then 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الاذاعه بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الاذاعه بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Send:Bot"..DevGRiNd,true) 
 end
@@ -7997,7 +7997,7 @@ end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_,msg.id_,"⌯︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات")  
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تغيير اسم المجموعه'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تغيير اسم المجموعه'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
@@ -8019,7 +8019,7 @@ if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_, msg.id_,"⌯︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات") 
 DevMuslim:del(DevGRiNd..'Moslim:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تغيير صورة المجموعه'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تغيير صورة المجموعه'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
@@ -8027,14 +8027,14 @@ DevMuslim:del(DevGRiNd..'Moslim:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id
 end 
 end
 if text and text:match("^ضع صوره$") and ChCheck(msg) or text and text:match("^وضع صوره$") and ChCheck(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل صورة المجموعه الان \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل صورة المجموعه الان \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 
 if text and text:match("^حذف الصوره$") and ChCheck(msg) or text and text:match("^مسح الصوره$") and ChCheck(msg) then
 https.request("https://api.telegram.org/bot"..TokenBot.."/deleteChatPhoto?chat_id="..msg.chat_id_) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف صورة المجموعه \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف صورة المجموعه \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false  
 end
@@ -8048,7 +8048,7 @@ end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
 DevMuslim:del(DevGRiNd..'Moslim:PinnedMsg'..msg.chat_id_)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم الغاء تثبيت الرساله'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم الغاء تثبيت الرساله'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false  
 end
@@ -8070,7 +8070,7 @@ return false
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم الغاء تثبيت الكل'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم الغاء تثبيت الكل'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 https.request('https://api.telegram.org/bot'..TokenBot..'/unpinAllChatMessages?chat_id='..msg.chat_id_)
 DevMuslim:del(DevGRiNd.."Moslim:PinnedMsg"..msg.chat_id_)
@@ -8095,7 +8095,7 @@ end
 local pin_id = DevMuslim:get(DevGRiNd..'Moslim:PinnedMsg'..msg.chat_id_)
 if pin_id then
 pin(msg.chat_id_,pin_id,0)
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم اعادة تثبيت الرساله'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم اعادة تثبيت الرساله'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end end
 end
@@ -8109,7 +8109,7 @@ ChatKick(msg.chat_id_, data.id_)
 end
 end,nil)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم طرد المحذوفين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم طرد المحذوفين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end,nil)
 end
@@ -8126,7 +8126,7 @@ changeChatMemberStatus(msg.chat_id_, y.user_id_, 'Left', dl_cb, nil)
 DevMuslim:del(DevGRiNd..'Moslim:Ban:'..msg.chat_id_)
 x = x + 1
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف المحظورين \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف المحظورين \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end
 end
@@ -8210,7 +8210,7 @@ if text == 'تفعيل البوت الخدمي' then
 if not Sudo(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطور الاساسي فقط', 1, 'md')
 else 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل البوت الخدمي'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل البوت الخدمي'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:FreeBot'..DevGRiNd) 
 end 
@@ -8219,25 +8219,25 @@ if text == 'تعطيل البوت الخدمي' then
 if not Sudo(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطور الاساسي فقط', 1, 'md')
 else 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل البوت الخدمي'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل البوت الخدمي'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:FreeBot'..DevGRiNd,true) 
 end 
 end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'تفعيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تفعيل اللعبه' and Manager(msg) and ChCheck(msg) then   
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل الالعاب بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل الالعاب بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:Lock:Games'..msg.chat_id_,true)  
 end
 if text == 'تعطيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تعطيل اللعبه' and Manager(msg) and ChCheck(msg) then  
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل الالعاب بنجاح'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل الالعاب بنجاح'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd..'Moslim:Lock:Games'..msg.chat_id_) 
 end
 if text == "تفعيل الرابط" or text == "تفعيل جلب الرابط" then 
 if Admin(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تفعيل جلب رابط المجموعه'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تفعيل جلب رابط المجموعه'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:del(DevGRiNd.."Moslim:Lock:GpLinks"..msg.chat_id_)
 return false  
@@ -8245,7 +8245,7 @@ end
 end
 if text == "تعطيل الرابط" or text == "تعطيل جلب الرابط" then 
 if Admin(msg) then
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم تعطيل جلب رابط المجموعه'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم تعطيل جلب رابط المجموعه'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd.."Moslim:Lock:GpLinks"..msg.chat_id_,"ok")
 return false  
@@ -8438,7 +8438,7 @@ send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المط
 return false
 end
 DevMuslim:setex(DevGRiNd.."Moslim:Send:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -8505,7 +8505,7 @@ send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المط
 return false
 end
 DevMuslim:setex(DevGRiNd.."Moslim:Send:Gp" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -8572,7 +8572,7 @@ send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المط
 return false
 end
 DevMuslim:setex(DevGRiNd.."Moslim:Send:FwdGp" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل الرساله الان لتوجيها \n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل الرساله الان لتوجيها \n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -8596,7 +8596,7 @@ send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المط
 return false
 end
 DevMuslim:setex(DevGRiNd.."Moslim:Send:FwdPv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل الرساله الان لتوجيها \n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل الرساله الان لتوجيها \n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -8620,7 +8620,7 @@ send(msg.chat_id_, msg.id_,"⌯︙الاذاعه معطله من قبل المط
 return false
 end
 DevMuslim:setex(DevGRiNd.."Moslim:Send:Gp:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل لي سواء   \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌯︙للخروج ارسل  ( الغاء ) \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -8778,7 +8778,7 @@ DevMuslim:del(DevGRiNd..'Moslim:File:GpRed'..v..msg.chat_id_)
 DevMuslim:del(DevGRiNd..'Moslim:Text:GpRed'..v..msg.chat_id_)
 DevMuslim:del(DevGRiNd..'Moslim:Manager:GpRed'..msg.chat_id_)
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف ردود المدير\n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف ردود المدير\n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end
@@ -8830,7 +8830,7 @@ DevMuslim:del(DevGRiNd.."Moslim:File:AllRed"..v)
 DevMuslim:del(DevGRiNd.."Moslim:Text:AllRed"..v)
 DevMuslim:del(DevGRiNd.."Moslim:Sudo:AllRed")
 end
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف ردود المطور \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف ردود المطور \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end
@@ -8841,7 +8841,7 @@ if text and text == "تغيير اسم البوت" or text and text == "وضع �
 if not Sudo(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطور الاساسي فقط ', 1, 'md')
 else
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙ارسل اسم البوت الان \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙ارسل اسم البوت الان \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 DevMuslim:set(DevGRiNd..'Moslim:NameBot'..msg.sender_user_id_..'', 'msg')
 return false 
@@ -8852,7 +8852,7 @@ if not Sudo(msg) then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevMuslim:del(DevGRiNd..'Moslim:NameBot')
-local DevGRiNdTEAM = '⌯︙اهلا عزيزي  '..MoslimRank(msg)..' \n⌯︙تم حذف اسم البوت \n ✓'
+local DevGRiNdTEAM = '⌯︙اهلاً عزيزي : '..MoslimRank(msg)..' \n⌯︙تم حذف اسم البوت \n ✓'
 Moslimmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DevGRiNdTEAM, 14, string.len(msg.sender_user_id_))
 end end 
 
