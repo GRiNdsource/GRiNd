@@ -3403,7 +3403,7 @@ name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'شاطئ','Beach')
 name = string.gsub(name,'غبي','Stupid')
 name = string.gsub(name,'صداقه','Friendchip')
-DevGRiNdTEAM = '⌯︙ما معنى كلمة  '..name
+DevGRiNdTEAM = '⌯︙ما معنى كلمة : '..name
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md')
 return false
 end end
@@ -3411,7 +3411,7 @@ if text == DevMuslim:get(DevGRiNd..'Moslim:GameNum7'..msg.chat_id_) then
 if not DevMuslim:get(DevGRiNd..'Moslim:Games:Ids'..msg.chat_id_) then 
 DevMuslim:incrby(DevGRiNd..'Moslim:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevMuslim:del(DevGRiNd..'Moslim:GameNum7'..msg.chat_id_)
-DevGRiNdTEAM = '⌯︙مبروك لقد ربحت في اللعبه \n⌯︙ارسل  انكليزيه للعب مره اخرى'
+DevGRiNdTEAM = '⌯︙مبروك لقد ربحت في اللعبه \n⌯︙ارسل : انكليزيه للعب مره اخرى'
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md')
 end
 DevMuslim:set(DevGRiNd..'Moslim:Games:Ids'..msg.chat_id_,true)
@@ -3916,7 +3916,7 @@ return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = { "لك جرجف @"..username.." احترم اسيادك لا اكتلك وازربب على كبرك،💩🖐🏿","هشش لك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمك هالمره بلكي تبطل حيونه، 🤔","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل",}
+local DevGRiNdTEAM = {"لك ها @"..username.."ابو ديوس","اكلك @"..username.." انتَ مو نفسك الجنت تتلزك لمسلك عمود يصعدك مطور؟","لك @"..username.." الفرخ",}
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'html') 
 else  
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو غير موجود في المجموعه', 1, 'md') 
@@ -3985,7 +3985,7 @@ return false
 end 
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = {"تعال حب محتاجيك🙂🍭","تعال يولل استاذك ايريدك","يمعوود تعال يريدوك","تعال لك ديصيحوك"} 
+local DevGRiNdTEAM = {"تعال حب محتاجيك","تعال يولل استاذك ايريدك","يمعوود تعال يريدوك","تعال لك ديصيحوك"} 
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -3999,7 +3999,7 @@ local username = text:match('^صيحه @(.*)') or text:match('^صيح @(.*)')
 function DevGRiNdTEAM(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(DevGRiNd) then  
-Dev_Muslim(msg.chat_id_, msg.id_, 1, 'فهمنيي شلوون راح اصيح نفسيي؟💔', 1, 'md')  
+Dev_Muslim(msg.chat_id_, msg.id_, 1, 'بس فهمني شلون رح اصيح نفسي؟', 1, 'md')  
 return false 
 end  
 if tonumber(result.id_) == tonumber(DevId) then 
@@ -4008,7 +4008,7 @@ return false
 end  
 local DevGRiNdTEAM = "خادم الك وللسيد. " 
 Dev_Muslim(msg.chat_id_, msg.id_, 1,DevGRiNdTEAM, 1, 'md') 
-local DevGRiNdTEAM = { "تعال حب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذك ايريدك","يمعوود @"..username.." تعال يريدوك","تعال لك @"..username.." ديصيحوك",}
+local DevGRiNdTEAM = { "تعال حب @"..username.." محتاجيك","تعال يولل @"..username.." استاذك ايريدك","يمعوود @"..username.." تعال يريدوك","تعال لك @"..username.." ديصيحوك",}
 Dev_Muslim(msg.chat_id_, result.id_, 1,''..DevGRiNdTEAM[math.random(#DevGRiNdTEAM)]..'', 1, 'html') 
 else  
 Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو غير موجود في المجموعه', 1, 'md') 
