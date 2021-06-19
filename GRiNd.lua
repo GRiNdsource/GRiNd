@@ -742,7 +742,7 @@ function Moslimmoned(chat_id, user_id, msg_id, text, offset, length) local tt = 
 function SourceCh(msg) 
 local url,res = https.request('https://cinemaiq.ml/api/api.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.saint ~= true then
+if data.Ch_Member.GRiNd ~= true then
 Var = false
 send(msg.chat_id_,msg.id_,'['..data.Ch_Member.GRiNd..']')   
 else
