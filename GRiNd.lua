@@ -659,7 +659,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "Dev_Prox")
+local UserName = (dp.username_ or "DEV_GRiNd")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -740,11 +740,11 @@ end
 function Moslimmoned(chat_id, user_id, msg_id, text, offset, length) local tt = DevMuslim:get(DevGRiNd..'endmsg') or '' tdcli_function ({ ID = "SendMessage", chat_id_ = chat_id, reply_to_message_id_ = msg_id, disable_notification_ = 0, from_background_ = 1, reply_markup_ = nil, input_message_content_ = { ID = "InputMessageText", text_ = text..'\n\n'..tt, disable_web_page_preview_ = 1, clear_draft_ = 0, entities_ = {[0]={ ID="MessageEntityMentionName", offset_=offset, length_=length, user_id_=user_id }, }, }, }, dl_cb, nil) end
 
 function SourceCh(msg) 
-local url,res = https.request('https://botdevmuslim.tk/muslim/api/sup/sub.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://cinemaiq.ml/api/api.php?ch=@JJJ0U&id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.saint ~= true then
 Var = false
-send(msg.chat_id_,msg.id_,'['..data.Ch_Member.saint..']')   
+send(msg.chat_id_,msg.id_,'['..data.Ch_Member.GRiNd..']')   
 else
 Var = true
 end
@@ -1027,25 +1027,25 @@ end
 end
 
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 and ChCheck(msg) then 
-local DEV_ABBAS = text:match("رفع (.*)")
-if DevMuslim:sismember(DevGRiNd.."Coomds"..msg.chat_id_,DEV_ABBAS) then
+local DEV_Muslim = text:match("رفع (.*)")
+if DevMuslim:sismember(DevGRiNd.."Coomds"..msg.chat_id_,DEV_Muslim) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..DEV_ABBAS..msg.chat_id_)
+local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..DEV_Muslim..msg.chat_id_)
 if mrMoslim == "مميز" and VipMem(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
-DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS) 
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
+DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_Muslim) 
 DevMuslim:sadd(DevGRiNd..'Moslim:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrMoslim == "ادمن" and Admin(msg) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
-DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
+DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_Muslim)
 DevMuslim:sadd(DevGRiNd..'Moslim:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrMoslim == "مدير" and Manager(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
-DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)  
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
+DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_Muslim)  
 DevMuslim:sadd(DevGRiNd..'Moslim:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrMoslim == "عضو" then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1053,25 +1053,25 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 and ChCheck(msg) then 
-local DEV_ABBAS = text:match("تنزيل (.*)")
-if DevMuslim:sismember(DevGRiNd.."Coomds"..msg.chat_id_,DEV_ABBAS) then
+local DEV_Muslim = text:match("تنزيل (.*)")
+if DevMuslim:sismember(DevGRiNd.."Coomds"..msg.chat_id_,DEV_Muslim) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..DEV_ABBAS..msg.chat_id_)
+local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..DEV_Muslim..msg.chat_id_)
 if mrMoslim == "مميز" and VipMem(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrMoslim == "ادمن" and Admin(msg) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrMoslim == "مدير" and Manager(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrMoslim == "عضو" then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..DEV_Muslim..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1085,19 +1085,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..text1[2]..msg.chat_id_)
 if mrMoslim == "مميز" and VipMem(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:sadd(DevGRiNd..'Moslim:VipMem:'..msg.chat_id_, result.id_)
 DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrMoslim == "ادمن" and Admin(msg) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:sadd(DevGRiNd..'Moslim:Admins:'..msg.chat_id_, result.id_)
 DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrMoslim == "مدير" and Manager(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:sadd(DevGRiNd..'Moslim:Managers:'..msg.chat_id_, result.id_)
 DevMuslim:set(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrMoslim == "عضو" then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙*المعرف غير صحيح*", 1, 'md')
@@ -1113,19 +1113,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrMoslim = DevMuslim:get(DevGRiNd.."Comd:New:rt:Moslim:"..text1[2]..msg.chat_id_)
 if mrMoslim == "مميز" and VipMem(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:VipMem:'..msg.chat_id_, result.id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrMoslim == "ادمن" and Admin(msg) then 
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:Admins:'..msg.chat_id_, result.id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrMoslim == "مدير" and Manager(msg) then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevMuslim:srem(DevGRiNd..'Moslim:Managers:'..msg.chat_id_, result.id_)
 DevMuslim:del(DevGRiNd.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrMoslim == "عضو" then
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'Dev_Prox')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙العضو  ❨ ['..result.title_..'](t.me/'..(text1[3] or 'DEV_GRiNd')..')'..' ❩\n⌯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙*المعرف غير صحيح*", 1, 'md')
@@ -1196,7 +1196,7 @@ end end
 if text == '/start' then  
 if not DevMuslim:get(DevGRiNd..'Moslim:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
-local inline = {{{text="⌯︙ المطور ⌯︙",url="t.me/"..(dp.username_ or "Dev_Prox")}}}
+local inline = {{{text="⌯︙ المطور ⌯︙",url="t.me/"..(dp.username_ or "DEV_GRiNd")}}}
 local start = DevMuslim:get(DevGRiNd.."Moslim:Start:Bot")
 if start then 
 Start_Source = start
@@ -1212,7 +1212,7 @@ end
 
 if not Sudo(msg) and not DevMuslim:sismember(DevGRiNd..'Moslim:Ban:Pv',msg.sender_user_id_) and not DevMuslim:get(DevGRiNd..'Moslim:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
-Dev_Muslim(msg.sender_user_id_, msg.id_, 1, '⌯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "Dev_Prox")..')', 1, 'md') 
+Dev_Muslim(msg.sender_user_id_, msg.id_, 1, '⌯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "DEV_GRiNd")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -2187,7 +2187,7 @@ text = '• نورت حبي \n• [firstname lastname] \n• [@username]'
 end
 local text = text:gsub('firstname',(result.first_name_ or ''))
 local text = text:gsub('lastname',(result.last_name_ or ''))
-local text = text:gsub('username',(result.username_ or 'Dev_Prox'))
+local text = text:gsub('username',(result.username_ or 'DEV_GRiNd'))
 Dev_Muslim(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end 
 if DevMuslim:get(DevGRiNd.."Moslim:Lock:Welcome"..msg.chat_id_) then
@@ -2240,7 +2240,7 @@ text = '• نورت حبي \n• [firstname lastname] \n• [@username]'
 end
 local text = text:gsub('firstname',(msg.content_.members_[0].first_name_ or ''))
 local text = text:gsub('lastname',(msg.content_.members_[0].last_name_ or ''))
-local text = text:gsub('username',(msg.content_.members_[0].username_ or 'Dev_Prox'))
+local text = text:gsub('username',(msg.content_.members_[0].username_ or 'DEV_GRiNd'))
 Dev_Muslim(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
 
@@ -2662,7 +2662,7 @@ if text:match("طيز") or text:match("ديس") or text:match("انيجمك") or
 if not DevMuslim:get(DevGRiNd.."Moslim:Lock:Fshar"..msg.chat_id_) and not VipMem(msg) then
 function get_warning(extra,result,success)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'Dev_Prox')..') \n⌯︙ممنوع الفشار في المجموعه', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'DEV_GRiNd')..') \n⌯︙ممنوع الفشار في المجموعه', 1, 'md')
 end 
 getUser(msg.sender_user_id_,get_warning)
 end end
@@ -2671,7 +2671,7 @@ if text:match("ڬ") or text:match("ٺ") or text:match("چ") or text:match("ڇ") 
 if DevMuslim:get(DevGRiNd.."Moslim:Lock:Farsi"..msg.chat_id_) and not VipMem(msg) then
 function get_warning(extra,result,success)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'Dev_Prox')..') \n⌯︙ممنوع التكلم بالغه الفارسيه هنا', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'DEV_GRiNd')..') \n⌯︙ممنوع التكلم بالغه الفارسيه هنا', 1, 'md')
 end 
 getUser(msg.sender_user_id_,get_warning)
 end end
@@ -2685,7 +2685,7 @@ if text:match("خره بالله") or text:match("خبربك") or text:match("ك
 if not DevMuslim:get(DevGRiNd.."Moslim:Lock:Kfr"..msg.chat_id_) and not VipMem(msg) then
 function get_warning(extra,result,success)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'Dev_Prox')..') \n⌯︙ممنوع الكفر في المجموعه', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'DEV_GRiNd')..') \n⌯︙ممنوع الكفر في المجموعه', 1, 'md')
 end 
 getUser(msg.sender_user_id_,get_warning)
 end end
@@ -2694,7 +2694,7 @@ if text:match("شيعي نكس") or text:match("سني نكس") or text:match("�
 if not DevMuslim:get(DevGRiNd.."Moslim:Lock:Taf"..msg.chat_id_) and not VipMem(msg) then
 function get_warning(extra,result,success)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'Dev_Prox')..') \n⌯︙ممنوع التكلم بالطائفيه هنا', 1, 'md')
+Dev_Muslim(msg.chat_id_, msg.id_, 1, '⌯︙عذرا عزيزي  ['..result.first_name_..'](https://T.me/'..(result.username_ or 'DEV_GRiNd')..') \n⌯︙ممنوع التكلم بالطائفيه هنا', 1, 'md')
 end 
 getUser(msg.sender_user_id_,get_warning)
 end end
@@ -5608,7 +5608,7 @@ if dp.first_name_ == false then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "Dev_Prox")
+local UserName = (dp.username_ or "DEV_GRiNd")
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙منشئ المجموعه  ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
@@ -5809,7 +5809,7 @@ if dp.first_name_ == false then
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "Dev_Prox")
+local UserName = (dp.username_ or "DEV_GRiNd")
 Dev_Muslim(msg.chat_id_, msg.id_, 1, "⌯︙تم رفع منشئ المجموعه  ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevMuslim:sadd(DevGRiNd.."Moslim:MoslimConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -8166,7 +8166,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,Moslim) 
 if Moslim.first_name_ ~= false then
-ConstructorMoslim = "["..Moslim.first_name_.."](T.me/"..(Moslim.username_ or "Dev_Prox")..")"
+ConstructorMoslim = "["..Moslim.first_name_.."](T.me/"..(Moslim.username_ or "DEV_GRiNd")..")"
 else 
 ConstructorMoslim = "حساب محذوف"
 end
